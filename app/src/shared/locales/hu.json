@@ -788,5 +788,6 @@
   "Also read the call's screen": "A hívás képernyőjét is olvassa",
   "Record with screen": "Felvétel képernyővel",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "A Yogurt nem tudja olvasni a hívás képernyőjét. Engedélyezd a képernyőfelvételt a Rendszerbeállításokban.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "A feltöltött videó és a hívás képernyőjéről olvasott képek megmaradnak, hogy újra olvashatók legyenek. Nélkülük a képernyő később már nem olvasható, például egy másik modellel."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "A feltöltött videó és a hívás képernyőjéről olvasott képek megmaradnak, hogy újra olvashatók legyenek. Nélkülük a képernyő később már nem olvasható, például egy másik modellel.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Engedélyezd a képernyőfelvételt a Yogurt számára, majd kérésre nyisd meg újra."
 }

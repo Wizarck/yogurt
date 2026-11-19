@@ -746,5 +746,6 @@
   "Also read the call's screen": "อ่านหน้าจอของสายด้วย",
   "Record with screen": "บันทึกพร้อมหน้าจอ",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt อ่านหน้าจอของสายไม่ได้ อนุญาตการบันทึกหน้าจอในการตั้งค่าระบบ",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "วิดีโอที่อัปโหลดและภาพที่อ่านจากหน้าจอของสายจะถูกเก็บไว้เพื่อให้อ่านได้อีกครั้ง หากไม่มีสิ่งเหล่านี้ จะอ่านหน้าจอในภายหลังไม่ได้ เช่น ด้วยโมเดลอื่น"
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "วิดีโอที่อัปโหลดและภาพที่อ่านจากหน้าจอของสายจะถูกเก็บไว้เพื่อให้อ่านได้อีกครั้ง หากไม่มีสิ่งเหล่านี้ จะอ่านหน้าจอในภายหลังไม่ได้ เช่น ด้วยโมเดลอื่น",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "อนุญาตให้ Yogurt บันทึกหน้าจอ แล้วเปิดใหม่เมื่อมีข้อความขอ"
 }

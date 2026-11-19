@@ -836,5 +836,6 @@
   "Also read the call's screen": "Читать и экран звонка",
   "Record with screen": "Записать с экраном",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt не может прочитать экран звонка. Разрешите запись экрана в Системных настройках.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Загруженное видео и изображения, прочитанные с экрана звонка, хранятся, чтобы их можно было прочитать снова. Без них экран нельзя будет прочитать позже, например другой моделью."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Загруженное видео и изображения, прочитанные с экрана звонка, хранятся, чтобы их можно было прочитать снова. Без них экран нельзя будет прочитать позже, например другой моделью.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Разрешите Yogurt запись экрана, а затем откройте его снова, когда появится запрос."
 }

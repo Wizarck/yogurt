@@ -80,6 +80,8 @@
 .setup-status svg { flex:none; }
 
 .call-prompt { position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;height:100%;padding:10px 12px;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--float);color:var(--ink); }
+.call-prompt[data-kind=start] { flex-wrap:wrap; }
+.call-prompt-screen-access { flex-basis:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;line-height:16px;color:var(--muted); }
 .call-prompt-heading { display:flex;align-items:center;flex:1;gap:10px;min-width:0; }
 .call-prompt-label { overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;line-height:19px;font-weight:600;letter-spacing:-.1px;color:var(--ink); }
 .call-prompt-title { overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0;font-size:12px;line-height:18px;font-weight:400;color:var(--muted); }

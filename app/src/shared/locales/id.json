@@ -746,5 +746,6 @@
   "Also read the call's screen": "Baca juga layar panggilan",
   "Record with screen": "Rekam dengan layar",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt tidak bisa membaca layar panggilan. Izinkan perekaman layar di Pengaturan Sistem.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Video yang diunggah dan gambar yang dibaca dari layar panggilan disimpan agar bisa dibaca lagi. Tanpa itu, layar tidak bisa dibaca nanti, misalnya dengan model lain."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Video yang diunggah dan gambar yang dibaca dari layar panggilan disimpan agar bisa dibaca lagi. Tanpa itu, layar tidak bisa dibaca nanti, misalnya dengan model lain.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Izinkan perekaman layar untuk Yogurt, lalu buka kembali saat diminta."
 }

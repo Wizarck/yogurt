@@ -53,6 +53,24 @@ describe('reading a call window while it records', () => {
     expect(s.args).toHaveLength(1)
   })
 
+  it('a resumed note reads the window only for that meeting, within a minute, carrying on after its earlier part', () => {
+    const s = setup()
+    s.hook.next({ appId: 'us.zoom.xos', title: '', browser: false }, 'm1')
+    s.start('other')
+    expect(s.args).toEqual([])
+    s.stop('other')
+    s.hook.next({ appId: 'us.zoom.xos', title: '', browser: false }, 'm1')
+    s.at(4200); s.start('m1')
+    expect(s.args).toEqual([['screen-live', '--app', 'us.zoom.xos', '--start-ms', '4200', '--frames', '/meetings/m1/screen']])
+    s.stop('m1')
+    vi.useFakeTimers()
+    try {
+      s.hook.next({ appId: 'us.zoom.xos', title: '', browser: false }, 'm1')
+      vi.advanceTimersByTime(61_000); s.start('m1')
+      expect(s.args).toHaveLength(1)
+    } finally { vi.useRealTimers() }
+  })
+
   it("What Yogurt keeps set to Don't keep it: the window is still read, its pictures are not saved", () => {
     const s = setup({ keepFrames: false })
     s.hook.next({ appId: 'us.zoom.xos', title: '', browser: false })

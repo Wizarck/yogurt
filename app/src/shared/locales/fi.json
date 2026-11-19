@@ -806,5 +806,6 @@
   "Also read the call's screen": "Lue myös puhelun näyttö",
   "Record with screen": "Tallenna näytön kanssa",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt ei voi lukea puhelun näyttöä. Salli näytön tallennus Järjestelmäasetuksissa.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Ladattu video ja puhelun näytöltä luetut kuvat säilytetään, jotta ne voidaan lukea uudelleen. Ilman niitä näyttöä ei voi lukea myöhemmin, esimerkiksi toisella mallilla."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Ladattu video ja puhelun näytöltä luetut kuvat säilytetään, jotta ne voidaan lukea uudelleen. Ilman niitä näyttöä ei voi lukea myöhemmin, esimerkiksi toisella mallilla.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Salli Yogurtille näytön tallennus ja avaa se uudelleen, kun sitä pyydetään."
 }

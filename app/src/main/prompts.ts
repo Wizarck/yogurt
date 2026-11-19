@@ -9,11 +9,13 @@ import { activeMeeting, onMeetingStop } from './meeting'
 
 const BACKGROUND = process.env.YOGURT_BACKGROUND === '1'
 const ACTIONS: readonly string[] = ['take-notes', 'take-notes-screen', 'close', 'stop', 'keep-going'] satisfies PromptAction[]
+/** the cards' height; a row taller while the Take notes card says how to allow screen recording */
+const CARD_H = 60, CARD_ACCESS_H = 100
 
 /** the card at the top right: small, frameless, on top of everything, appears without taking focus from what the person is doing */
 function createCard(kind: PromptView['kind'], os = 'darwin'): BrowserWindow {
   const { workArea } = screen.getPrimaryDisplay()
-  const width = 381, height = 60
+  const width = 381, height = CARD_H
   const background = () => nativeTheme.shouldUseDarkColors ? '#29292B' : '#FFFFFF'
   // A Mac: the Take notes card is a non-activating panel like the widget, so clicking it (its X included) never makes
   // Yogurt the active app and brings its window forward. The stop card takes keyboard focus, so it stays a plain window.
@@ -46,6 +48,8 @@ export function createPrompts(d: {
   takeNotes(p: Prompt, screen: boolean): void
   /** can the card offer to read this call's window? (a Mac) */
   screen?(p: Prompt): boolean
+  /** may Yogurt read the screen? Asks the Mac when not */
+  screenAccess?(): Promise<boolean>
   stop(meetingId: string): void
   dismissed(key: string): void
   keepGoing(): void
@@ -111,6 +115,12 @@ export function createPrompts(d: {
 
   ipcMain.handle('prompt:state', () => view)
   ipcMain.handle('prompt:act', (_e, action: unknown) => { if (ACTIONS.includes(action as PromptAction)) act(action as PromptAction) })
+  // the screen button: on with Screen Recording off, the card grows a row saying how to allow it
+  ipcMain.handle('prompt:screen', async (_e, on: unknown) => {
+    const allowed = on !== true || await (d.screenAccess?.() ?? true)
+    if (view?.kind === 'start' && card && !card.isDestroyed()) card.setBounds({ height: allowed ? CARD_H : CARD_ACCESS_H })
+    return allowed
+  })
 
   return {
     offer(p: Prompt) { prompt = p; show({ kind: 'start', key: p.key, app: p.app, title: p.title, ...(p.screen && d.screen?.(p) ? { screen: true } : {}) }) },

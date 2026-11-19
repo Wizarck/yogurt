@@ -746,5 +746,6 @@
   "Also read the call's screen": "통화 화면도 읽기",
   "Record with screen": "화면과 함께 녹음",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt가 통화 화면을 읽을 수 없어요. 시스템 설정에서 화면 기록을 허용하세요.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "업로드한 비디오와 통화 화면에서 읽은 이미지는 다시 읽을 수 있도록 보관돼요. 이것들이 없으면 나중에 다른 모델 등으로 화면을 읽을 수 없어요."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "업로드한 비디오와 통화 화면에서 읽은 이미지는 다시 읽을 수 있도록 보관돼요. 이것들이 없으면 나중에 다른 모델 등으로 화면을 읽을 수 없어요.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Yogurt에 화면 기록을 허용한 다음, 요청이 나오면 다시 여세요."
 }

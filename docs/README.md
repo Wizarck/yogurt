@@ -64,6 +64,8 @@ On a Mac, the **Take notes?** card that shows when a call starts has a screen bu
 
 - Only the call's window is read: Zoom's or Teams' meeting window, or the browser window while it shows the call's tab (a Meet tab, for example). Other apps and other tabs never are.
 - It is chosen for each call, and it is off unless you turn it on. A recording started from Yogurt itself reads no screen.
+- The first time you turn the button on, the Mac asks to allow Screen Recording for Yogurt. Allow it before you start recording: macOS then asks to reopen Yogurt. Until then, the card says so with **Open Settings**, and the call is recorded as usual.
+- If the call's event already has a note, the card adds to that note, and the screen is read for the new part.
 - Pausing the recording pauses it too. If Screen Recording is off, the note says so and the call is recorded as usual.
 - The pictures read are kept with the meeting until **Delete video** in [What Yogurt keeps](#what-yogurt-keeps) removes them.
 

@@ -12,6 +12,14 @@ export function Prompt() {
   const [countdown, setCountdown] = useState(0)
   // off each time the card shows: reading the call's window is chosen per call
   const [screen, setScreen] = useState(false)
+  // Screen Recording is off: the card says how to allow it (the call still records its sound)
+  const [blocked, setBlocked] = useState(false)
+  const toggleScreen = () => {
+    const on = !screen
+    setScreen(on)
+    if (!on) setBlocked(false)
+    void window.yogurt.prompt.screen(on).then(allowed => setBlocked(on && !allowed), () => {})
+  }
   useEffect(() => { void window.yogurt.prompt.state().then(setView) }, [])
   useEffect(() => {
     if (view?.kind !== 'start' || hovered || focused) return
@@ -41,7 +49,7 @@ export function Prompt() {
           <>
             {view.screen && (
               <button data-testid="prompt-screen" aria-pressed={screen} aria-label={t("Also read the call's screen")} title={t("Also read the call's screen")}
-                className="ghost-btn workspace-icon call-prompt-screen" onClick={() => setScreen(on => !on)}>
+                className="ghost-btn workspace-icon call-prompt-screen" onClick={toggleScreen}>
                 <Monitor size={16} aria-hidden="true" />
               </button>
             )}
@@ -63,6 +71,13 @@ export function Prompt() {
       <button data-testid={start ? 'prompt-close' : 'prompt-dismiss-stop'} aria-label={t(start ? 'Not now' : 'Close')} title={start ? undefined : t('Close')} className="ghost-btn workspace-icon" onClick={() => window.yogurt.prompt.act('close')}>
         <X size={16} aria-hidden="true" />
       </button>
+      {start && blocked && (
+        <div data-testid="prompt-screen-access" className="call-prompt-screen-access" role="status">
+          <p>{t('Allow screen recording for Yogurt, then reopen it when asked.')}</p>
+          {/* screen recording shares call audio's pane (Screen & System Audio Recording) */}
+          <button data-testid="prompt-screen-settings" className="workspace-button" onClick={() => void window.yogurt.permissions.open('systemAudio')}>{t('Open Settings')}</button>
+        </div>
+      )}
     </div>
   )
 }
