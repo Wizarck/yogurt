@@ -272,7 +272,6 @@
   "Open Yogurt when Windows starts": "Άνοιγμα του Yogurt με την εκκίνηση των Windows",
   "Open Yogurt when you log in": "Άνοιγμα του Yogurt κατά τη σύνδεση",
   "Open in Ask": "Άνοιγμα στις Ερωτήσεις",
-  "Open note": "Άνοιγμα σημείωσης",
   "Open this note and finish saving before deleting it.": "Ανοίξτε αυτή τη σημείωση και ολοκληρώστε την αποθήκευση πριν τη διαγράψετε.",
   "Open {source}": "Άνοιγμα {source}",
   "Open {title}": "Άνοιγμα {title}",
@@ -597,9 +596,7 @@
   "Delete audio?": "Διαγραφή ήχου;",
   "The audio is deleted for good. Your transcript and notes stay.": "Ο ήχος διαγράφεται οριστικά. Η απομαγνητοφώνηση και οι σημειώσεις μένουν.",
   "Keep the audio until the transcript is saved.": "Κρατήστε τον ήχο μέχρι να αποθηκευτεί η απομαγνητοφώνηση.",
-  "Keep audio recordings after meetings": "Διατήρηση ηχογραφήσεων μετά τις συναντήσεις",
   "Recording deleted": "Η ηχογράφηση διαγράφηκε",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Αν κλείσει, ο ήχος νέων συναντήσεων διαγράφεται μόλις σωθεί η σύνοψη.",
   "New recording": "Νέα ηχογράφηση",
   "Hide events without a call link": "Απόκρυψη συμβάντων χωρίς σύνδεσμο κλήσης",
   "Keep your agenda and reminders focused on calls.": "Εστιάστε το πρόγραμμά σας και τις υπενθυμίσεις στις κλήσεις.",
@@ -750,5 +747,35 @@
   "Copy setup": "Αντιγραφή ρύθμισης",
   "App name": "Όνομα εφαρμογής",
   "Add an app": "Προσθήκη εφαρμογής",
-  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Επικολλήστε αυτή τη ρύθμιση στο {name}. Περιέχει το κλειδί της εφαρμογής, οπότε κρατήστε τη ιδιωτική."
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Επικολλήστε αυτή τη ρύθμιση στο {name}. Περιέχει το κλειδί της εφαρμογής, οπότε κρατήστε τη ιδιωτική.",
+  "Open": "Άνοιγμα",
+  "What Yogurt keeps": "Τι κρατά το Yogurt",
+  "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Μετρά από τη λήξη κάθε σύσκεψης. Ο ήχος και οι απομαγνητοφωνήσεις διαγράφονται μόνο αφού αποθηκευτεί η σύνοψη, και οι σημειώσεις μένουν.",
+  "Delete transcripts": "Διαγραφή απομαγνητοφωνήσεων",
+  "Its audio goes with it.": "Διαγράφεται και ο ήχος της.",
+  "Move meetings to the Trash": "Μετακίνηση συσκέψεων στον Κάδο",
+  "Never": "Ποτέ",
+  "Once the summary is saved": "Μόλις αποθηκευτεί η σύνοψη",
+  "After 1 week": "Μετά από 1 εβδομάδα",
+  "After 1 month": "Μετά από 1 μήνα",
+  "After 3 months": "Μετά από 3 μήνες",
+  "After 1 year": "Μετά από 1 έτος",
+  "After 2 years": "Μετά από 2 έτη",
+  "Number of days": "Αριθμός ημερών",
+  "Days": "Ημέρες",
+  "Apply to past meetings?": "Εφαρμογή σε παλαιότερες συσκέψεις;",
+  "Apply": "Εφαρμογή",
+  "{count} meetings already qualify. Their audio is deleted now.": {
+    "one": "{count} σύσκεψη πληροί ήδη τον κανόνα. Ο ήχος της διαγράφεται τώρα.",
+    "other": "{count} συσκέψεις πληρούν ήδη τον κανόνα. Ο ήχος τους διαγράφεται τώρα."
+  },
+  "{count} meetings already qualify. Their transcripts and audio are deleted now; their notes stay.": {
+    "one": "{count} σύσκεψη πληροί ήδη τον κανόνα. Η απομαγνητοφώνηση και ο ήχος της διαγράφονται τώρα, ενώ οι σημειώσεις μένουν.",
+    "other": "{count} συσκέψεις πληρούν ήδη τον κανόνα. Οι απομαγνητοφωνήσεις και ο ήχος τους διαγράφονται τώρα, ενώ οι σημειώσεις μένουν."
+  },
+  "{count} meetings already qualify. They move to the Trash now.": {
+    "one": "{count} σύσκεψη πληροί ήδη τον κανόνα. Μετακινείται τώρα στον Κάδο.",
+    "other": "{count} συσκέψεις πληρούν ήδη τον κανόνα. Μετακινούνται τώρα στον Κάδο."
+  },
+  "The transcript was deleted on {date}, as set in Settings.": "Η απομαγνητοφώνηση διαγράφηκε στις {date}, όπως ορίζεται στις Ρυθμίσεις."
 }
