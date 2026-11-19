@@ -766,7 +766,6 @@
   "Reading the screen…": "Ekran okunuyor…",
   "Delete video": "Videoyu sil",
   "Don't keep it": "Saklanmasın",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Yüklenen video, ekranı yeniden okunabilsin diye saklanır. Video olmadan ekran daha sonra, örneğin başka bir modelle okunamaz.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} toplantı zaten kapsama giriyor. Videosu şimdi silinir.",
     "other": "{count} toplantı zaten kapsama giriyor. Videoları şimdi silinir."
@@ -815,5 +814,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Özetler için bir yapay zekâ modeli gerekir. Yogurt AI bu bilgisayarda yok, bu yüzden Ayarlar → Yapay zekâ modelleri bölümünden özetler için bir model seçin.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Burada yine de kayıt yapıp yazıya dökebilir, özetleri kendi sunucunuza veya bir yapay zekâ uygulamasına yazdırabilirsiniz (Ayarlar → Yapay zekâ modelleri).",
   "Continue without Yogurt AI": "Yogurt AI olmadan devam et",
-  "Pick an AI model for summaries in Settings": "Ayarlar’da özetler için bir yapay zekâ modeli seçin"
+  "Pick an AI model for summaries in Settings": "Ayarlar’da özetler için bir yapay zekâ modeli seçin",
+  "Also read the call's screen": "Aramanın ekranını da oku",
+  "Record with screen": "Ekranla kaydet",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt aramanın ekranını okuyamıyor. Sistem Ayarları’ndan ekran kaydına izin verin.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Yüklenen video ve bir aramanın ekranından okunan görüntüler, yeniden okunabilsin diye saklanır. Bunlar olmadan ekran daha sonra, örneğin başka bir modelle okunamaz."
 }

@@ -797,7 +797,6 @@
   "Reading the screen…": "Lecture de l’écran…",
   "Delete video": "Supprimer la vidéo",
   "Don't keep it": "Ne pas la conserver",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Une vidéo importée est conservée pour que son écran puisse être relu. Sans elle, l’écran ne pourra pas être lu ultérieurement, par exemple avec un autre modèle.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} réunion est déjà concernée. Sa vidéo est supprimée dès maintenant.",
     "many": "{count} réunions sont déjà concernées. Leurs vidéos sont supprimées dès maintenant.",
@@ -847,5 +846,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Les résumés nécessitent un modèle d’IA. L’IA Yogurt n’est pas sur cet ordinateur : choisissez-en un pour les résumés dans Réglages → Modèles d’IA.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Vous pouvez quand même enregistrer et transcrire ici, et faire rédiger les résumés par votre propre serveur ou une app d’IA (Réglages → Modèles d’IA).",
   "Continue without Yogurt AI": "Continuer sans l’IA Yogurt",
-  "Pick an AI model for summaries in Settings": "Choisissez un modèle d’IA pour les résumés dans Réglages"
+  "Pick an AI model for summaries in Settings": "Choisissez un modèle d’IA pour les résumés dans Réglages",
+  "Also read the call's screen": "Lire aussi l’écran de l’appel",
+  "Record with screen": "Enregistrer avec l’écran",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt ne peut pas lire l’écran de l’appel. Autorisez l’enregistrement de l’écran dans Réglages Système.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Une vidéo importée et les images lues sur l’écran d’un appel sont conservées pour pouvoir être relues. Sans elles, l’écran ne pourra pas être lu ultérieurement, par exemple avec un autre modèle."
 }

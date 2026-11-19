@@ -798,7 +798,6 @@
   "Reading the screen…": "Se citește ecranul…",
   "Delete video": "Șterge videoclipul",
   "Don't keep it": "Nu-l păstra",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Un videoclip încărcat se păstrează ca ecranul lui să poată fi citit din nou. Fără el, ecranul nu mai poate fi citit ulterior, de exemplu cu alt model.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} întâlnire se încadrează deja. Videoclipul ei se șterge acum.",
     "few": "{count} întâlniri se încadrează deja. Videoclipurile lor se șterg acum.",
@@ -848,5 +847,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Rezumatele au nevoie de un model AI. Yogurt AI nu este pe acest computer, așa că alegeți unul pentru rezumate în Setări → Modele AI.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Puteți totuși să înregistrați și să transcrieți aici, iar rezumatele le poate scrie serverul dvs. sau o aplicație AI (Setări → Modele AI).",
   "Continue without Yogurt AI": "Continuați fără Yogurt AI",
-  "Pick an AI model for summaries in Settings": "Alegeți un model AI pentru rezumate în Setări"
+  "Pick an AI model for summaries in Settings": "Alegeți un model AI pentru rezumate în Setări",
+  "Also read the call's screen": "Citiți și ecranul apelului",
+  "Record with screen": "Înregistrați cu ecranul",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt nu poate citi ecranul apelului. Permiteți înregistrarea ecranului în Configurări sistem.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Un videoclip încărcat și imaginile citite de pe ecranul unui apel se păstrează ca să poată fi citite din nou. Fără ele, ecranul nu mai poate fi citit ulterior, de exemplu cu alt model."
 }

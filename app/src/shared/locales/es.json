@@ -794,7 +794,6 @@
   "Reading the screen…": "Leyendo la pantalla…",
   "Delete video": "Eliminar vídeo",
   "Don't keep it": "No conservarlo",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Un vídeo subido se conserva para poder volver a leer su pantalla. Sin él, la pantalla no se podrá leer más adelante, por ejemplo, con otro modelo.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} reunión ya cumple la regla. Su vídeo se eliminará ahora.",
     "many": "{count} reuniones ya cumplen la regla. Sus vídeos se eliminarán ahora.",
@@ -844,5 +843,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Los resúmenes necesitan un modelo de IA. Yogurt AI no está en este ordenador, así que elige uno para los resúmenes en Ajustes → Modelos de IA.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Aún puedes grabar y transcribir aquí, y hacer que tu propio servidor o una app de IA escriban los resúmenes (Ajustes → Modelos de IA).",
   "Continue without Yogurt AI": "Continuar sin Yogurt AI",
-  "Pick an AI model for summaries in Settings": "Elige un modelo de IA para los resúmenes en Ajustes"
+  "Pick an AI model for summaries in Settings": "Elige un modelo de IA para los resúmenes en Ajustes",
+  "Also read the call's screen": "Leer también la pantalla de la llamada",
+  "Record with screen": "Grabar con pantalla",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt no puede leer la pantalla de la llamada. Permite la grabación de pantalla en Ajustes del Sistema.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Un vídeo subido y las imágenes leídas de la pantalla de una llamada se conservan para poder volver a leerlas. Sin ellas, la pantalla no se podrá leer más adelante, por ejemplo, con otro modelo."
 }

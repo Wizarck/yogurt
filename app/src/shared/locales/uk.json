@@ -812,7 +812,6 @@
   "Reading the screen…": "Читаємо екран…",
   "Delete video": "Видалити відео",
   "Don't keep it": "Не зберігати",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Завантажене відео зберігається, щоб екран із нього можна було прочитати знову. Без нього екран не вдасться прочитати пізніше, наприклад іншою моделлю.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} зустріч уже підпадає під правило. Її відео буде видалено зараз.",
     "few": "{count} зустрічі вже підпадають під правило. Їхні відео буде видалено зараз.",
@@ -863,5 +862,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Для підсумків потрібна ШІ-модель. Yogurt AI немає на цьому комп’ютері, тож виберіть модель для підсумків у розділі Параметри → ШІ-моделі.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Тут і далі можна записувати й транскрибувати, а підсумки може писати ваш сервер або програма зі ШІ (Параметри → ШІ-моделі).",
   "Continue without Yogurt AI": "Продовжити без Yogurt AI",
-  "Pick an AI model for summaries in Settings": "Виберіть ШІ-модель для підсумків у Параметрах"
+  "Pick an AI model for summaries in Settings": "Виберіть ШІ-модель для підсумків у Параметрах",
+  "Also read the call's screen": "Читати й екран дзвінка",
+  "Record with screen": "Записувати з екраном",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt не може прочитати екран дзвінка. Дозвольте запис екрана в Системних параметрах.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Завантажене відео та зображення, прочитані з екрана дзвінка, зберігаються, щоб їх можна було прочитати знову. Без них екран не вдасться прочитати пізніше, наприклад іншою моделлю."
 }

@@ -797,7 +797,6 @@
   "Reading the screen…": "Lendo a tela…",
   "Delete video": "Excluir vídeo",
   "Don't keep it": "Não manter",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Um vídeo enviado é mantido para que a tela dele possa ser lida de novo. Sem ele, a tela não poderá ser lida depois, por exemplo, com outro modelo.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} reunião já se encaixa na regra. O vídeo dela será excluído agora.",
     "many": "{count} reuniões já se encaixam na regra. Os vídeos delas serão excluídos agora.",
@@ -847,5 +846,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Os resumos precisam de um modelo de IA. O Yogurt AI não está neste computador, então escolha um para os resumos em Ajustes → Modelos de IA.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Você ainda pode gravar e transcrever aqui, e fazer seu próprio servidor ou um app de IA escrever os resumos (Ajustes → Modelos de IA).",
   "Continue without Yogurt AI": "Continuar sem o Yogurt AI",
-  "Pick an AI model for summaries in Settings": "Escolha um modelo de IA para os resumos em Ajustes"
+  "Pick an AI model for summaries in Settings": "Escolha um modelo de IA para os resumos em Ajustes",
+  "Also read the call's screen": "Ler também a tela da chamada",
+  "Record with screen": "Gravar com a tela",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "O Yogurt não consegue ler a tela da chamada. Permita a gravação de tela nos Ajustes do Sistema.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Um vídeo enviado e as imagens lidas da tela de uma chamada são mantidos para que possam ser lidos de novo. Sem eles, a tela não poderá ser lida depois, por exemplo, com outro modelo."
 }

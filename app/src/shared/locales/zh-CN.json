@@ -727,7 +727,6 @@
   "Reading the screen…": "正在读取屏幕…",
   "Delete video": "删除视频",
   "Don't keep it": "不保留",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "上传的视频会被保留，以便再次读取其屏幕内容。没有视频，之后就无法再读取屏幕，例如使用其他模型时。",
   "{count} meetings already qualify. Their videos are deleted now.": "已有 {count} 个会议符合条件。其视频将立即删除。",
   "Edit or regenerate summary": "编辑或重新生成摘要",
   "Edit summary": "编辑摘要",
@@ -773,5 +772,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "摘要需要 AI 模型。Yogurt AI 不在这台电脑上，请在“设置 → AI 模型”中为摘要选择一个模型。",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "你仍可以在这里录音和转写，并让你自己的服务器或 AI 应用来写摘要（设置 → AI 模型）。",
   "Continue without Yogurt AI": "不使用 Yogurt AI 继续",
-  "Pick an AI model for summaries in Settings": "在“设置”中为摘要选择 AI 模型"
+  "Pick an AI model for summaries in Settings": "在“设置”中为摘要选择 AI 模型",
+  "Also read the call's screen": "同时读取通话屏幕",
+  "Record with screen": "录音并读取屏幕",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt 无法读取通话屏幕。请在系统设置中允许屏幕录制。",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "上传的视频以及从通话屏幕读取的图片会被保留，以便再次读取。没有它们，之后就无法再读取屏幕，例如使用其他模型时。"
 }

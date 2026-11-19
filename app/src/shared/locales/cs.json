@@ -815,7 +815,6 @@
   "Reading the screen…": "Čtení obrazovky…",
   "Delete video": "Smazat video",
   "Don't keep it": "Neuchovávat",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Nahrané video se uchovává, aby šlo jeho obrazovku přečíst znovu. Bez něj obrazovku později přečíst nepůjde, například jiným modelem.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} schůzka už splňuje podmínku. Její video se teď smaže.",
     "few": "{count} schůzky už splňují podmínku. Jejich videa se teď smažou.",
@@ -866,5 +865,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Souhrny potřebují model AI. Yogurt AI není na tomto počítači, proto pro souhrny vyberte model v Nastavení → AI modely.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Nahrávat a přepisovat tu můžete i tak a souhrny může psát váš vlastní server nebo AI aplikace (Nastavení → AI modely).",
   "Continue without Yogurt AI": "Pokračovat bez Yogurt AI",
-  "Pick an AI model for summaries in Settings": "V Nastavení vyberte model AI pro souhrny"
+  "Pick an AI model for summaries in Settings": "V Nastavení vyberte model AI pro souhrny",
+  "Also read the call's screen": "Číst i obrazovku hovoru",
+  "Record with screen": "Nahrávat s obrazovkou",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt nemůže číst obrazovku hovoru. Povolte nahrávání obrazovky v Nastavení systému.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Nahrané video a obrázky přečtené z obrazovky hovoru se uchovávají, aby šly přečíst znovu. Bez nich obrazovku později přečíst nepůjde, například jiným modelem."
 }

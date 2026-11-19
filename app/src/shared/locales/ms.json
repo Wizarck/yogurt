@@ -727,7 +727,6 @@
   "Reading the screen…": "Membaca skrin…",
   "Delete video": "Padam video",
   "Don't keep it": "Jangan simpan",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Video yang dimuat naik disimpan supaya skrinnya boleh dibaca semula. Tanpanya, skrin tidak boleh dibaca kemudian, contohnya dengan model lain.",
   "{count} meetings already qualify. Their videos are deleted now.": "{count} mesyuarat sudah memenuhi syarat. Videonya dipadam sekarang.",
   "Edit or regenerate summary": "Sunting atau jana semula ringkasan",
   "Edit summary": "Sunting ringkasan",
@@ -773,5 +772,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Ringkasan memerlukan model AI. Yogurt AI tiada pada komputer ini, jadi pilih satu untuk ringkasan dalam Tetapan → Model AI.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Anda masih boleh merakam dan mentranskripsi di sini, dan meminta pelayan anda sendiri atau app AI menulis ringkasan (Tetapan → Model AI).",
   "Continue without Yogurt AI": "Teruskan tanpa Yogurt AI",
-  "Pick an AI model for summaries in Settings": "Pilih model AI untuk ringkasan dalam Tetapan"
+  "Pick an AI model for summaries in Settings": "Pilih model AI untuk ringkasan dalam Tetapan",
+  "Also read the call's screen": "Baca juga skrin panggilan",
+  "Record with screen": "Rakam dengan skrin",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt tidak dapat membaca skrin panggilan. Benarkan rakaman skrin dalam Seting Sistem.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Video yang dimuat naik dan gambar yang dibaca daripada skrin panggilan disimpan supaya boleh dibaca semula. Tanpanya, skrin tidak boleh dibaca kemudian, contohnya dengan model lain."
 }

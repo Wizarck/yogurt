@@ -778,7 +778,6 @@
   "Reading the screen…": "Læser skærmen…",
   "Delete video": "Slet video",
   "Don't keep it": "Behold den ikke",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "En uploadet video beholdes, så skærmen i den kan læses igen. Uden videoen kan skærmen ikke læses senere, for eksempel med en anden model.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} møde er allerede omfattet. Videoen slettes nu.",
     "other": "{count} møder er allerede omfattet. Deres videoer slettes nu."
@@ -827,5 +826,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Resuméer kræver en AI-model. Yogurt AI er ikke på denne computer, så vælg en til resuméer under Indstillinger → AI-modeller.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Du kan stadig optage og transskribere her og lade din egen server eller en AI-app skrive resuméerne (Indstillinger → AI-modeller).",
   "Continue without Yogurt AI": "Fortsæt uden Yogurt AI",
-  "Pick an AI model for summaries in Settings": "Vælg en AI-model til resuméer i Indstillinger"
+  "Pick an AI model for summaries in Settings": "Vælg en AI-model til resuméer i Indstillinger",
+  "Also read the call's screen": "Læs også opkaldets skærm",
+  "Record with screen": "Optag med skærm",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt kan ikke læse opkaldets skærm. Tillad skærmoptagelse i Systemindstillinger.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "En uploadet video og billederne læst fra et opkalds skærm beholdes, så de kan læses igen. Uden dem kan skærmen ikke læses senere, for eksempel med en anden model."
 }

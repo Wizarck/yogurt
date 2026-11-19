@@ -727,7 +727,6 @@
   "Reading the screen…": "กำลังอ่านหน้าจอ…",
   "Delete video": "ลบวิดีโอ",
   "Don't keep it": "ไม่เก็บไว้",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "วิดีโอที่อัปโหลดจะถูกเก็บไว้เพื่อให้อ่านหน้าจอได้อีกครั้ง หากไม่มีวิดีโอ จะอ่านหน้าจอในภายหลังไม่ได้ เช่น ด้วยโมเดลอื่น",
   "{count} meetings already qualify. Their videos are deleted now.": "มีการประชุม {count} รายการที่เข้าเงื่อนไขแล้ว วิดีโอของการประชุมเหล่านี้จะถูกลบตอนนี้",
   "Edit or regenerate summary": "แก้ไขหรือสร้างสรุปใหม่",
   "Edit summary": "แก้ไขสรุป",
@@ -773,5 +772,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "สรุปต้องใช้โมเดล AI แต่ไม่มี Yogurt AI ในคอมพิวเตอร์เครื่องนี้ จึงต้องเลือกโมเดลสำหรับสรุปใน การตั้งค่า → โมเดล AI",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "คุณยังบันทึกและถอดเสียงที่นี่ได้ และให้เซิร์ฟเวอร์ของคุณเองหรือแอป AI เขียนสรุปแทน (การตั้งค่า → โมเดล AI)",
   "Continue without Yogurt AI": "ดำเนินการต่อโดยไม่มี Yogurt AI",
-  "Pick an AI model for summaries in Settings": "เลือกโมเดล AI สำหรับสรุปในการตั้งค่า"
+  "Pick an AI model for summaries in Settings": "เลือกโมเดล AI สำหรับสรุปในการตั้งค่า",
+  "Also read the call's screen": "อ่านหน้าจอของสายด้วย",
+  "Record with screen": "บันทึกพร้อมหน้าจอ",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt อ่านหน้าจอของสายไม่ได้ อนุญาตการบันทึกหน้าจอในการตั้งค่าระบบ",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "วิดีโอที่อัปโหลดและภาพที่อ่านจากหน้าจอของสายจะถูกเก็บไว้เพื่อให้อ่านได้อีกครั้ง หากไม่มีสิ่งเหล่านี้ จะอ่านหน้าจอในภายหลังไม่ได้ เช่น ด้วยโมเดลอื่น"
 }

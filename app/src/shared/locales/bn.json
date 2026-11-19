@@ -766,7 +766,6 @@
   "Reading the screen…": "স্ক্রিন পড়া হচ্ছে…",
   "Delete video": "ভিডিও মুছুন",
   "Don't keep it": "রাখবেন না",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "আপলোড করা ভিডিও রাখা হয়, যাতে এর স্ক্রিন আবার পড়া যায়। এটি না থাকলে পরে স্ক্রিন পড়া যাবে না, যেমন অন্য কোনো মডেল দিয়ে।",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count}টি মিটিং ইতিমধ্যে এই নিয়মে পড়ে। এর ভিডিও এখনই মুছে যাবে।",
     "other": "{count}টি মিটিং ইতিমধ্যে এই নিয়মে পড়ে। সেগুলোর ভিডিও এখনই মুছে যাবে।"
@@ -815,5 +814,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "সারাংশের জন্য একটি AI মডেল দরকার। Yogurt AI এই কম্পিউটারে নেই, তাই সেটিংস → AI মডেল থেকে সারাংশের জন্য একটি বেছে নিন।",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "আপনি এখনও এখানে রেকর্ড ও প্রতিলিপি করতে পারবেন, আর নিজের সার্ভার বা কোনো AI অ্যাপ দিয়ে সারাংশ লেখাতে পারবেন (সেটিংস → AI মডেল)।",
   "Continue without Yogurt AI": "Yogurt AI ছাড়াই চালিয়ে যান",
-  "Pick an AI model for summaries in Settings": "সেটিংসে সারাংশের জন্য একটি AI মডেল বেছে নিন"
+  "Pick an AI model for summaries in Settings": "সেটিংসে সারাংশের জন্য একটি AI মডেল বেছে নিন",
+  "Also read the call's screen": "কলের স্ক্রিনও পড়ুন",
+  "Record with screen": "স্ক্রিনসহ রেকর্ড করুন",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt কলের স্ক্রিন পড়তে পারছে না। সিস্টেম সেটিংসে স্ক্রিন রেকর্ডিংয়ের অনুমতি দিন।",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "আপলোড করা ভিডিও এবং কলের স্ক্রিন থেকে পড়া ছবিগুলো রাখা হয়, যাতে সেগুলো আবার পড়া যায়। এগুলো না থাকলে পরে স্ক্রিন পড়া যাবে না, যেমন অন্য কোনো মডেল দিয়ে।"
 }

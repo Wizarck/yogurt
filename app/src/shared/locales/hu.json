@@ -766,7 +766,6 @@
   "Reading the screen…": "Képernyő olvasása…",
   "Delete video": "Videó törlése",
   "Don't keep it": "Ne őrizze meg",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "A feltöltött videó megmarad, hogy a képernyője újra olvasható legyen. Nélküle a képernyő később már nem olvasható, például egy másik modellel.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} megbeszélés már érintett. A videója most törlődik.",
     "other": "{count} megbeszélés már érintett. A videóik most törlődnek."
@@ -815,5 +814,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Az összefoglalókhoz AI-modell kell. A Yogurt AI nincs ezen a számítógépen, ezért válassz egyet az összefoglalókhoz itt: Beállítások → AI-modellek.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Itt továbbra is rögzíthetsz és átírhatsz, az összefoglalókat pedig megírhatja a saját szervered vagy egy AI-app (Beállítások → AI-modellek).",
   "Continue without Yogurt AI": "Tovább Yogurt AI nélkül",
-  "Pick an AI model for summaries in Settings": "Válassz AI-modellt az összefoglalókhoz a Beállításokban"
+  "Pick an AI model for summaries in Settings": "Válassz AI-modellt az összefoglalókhoz a Beállításokban",
+  "Also read the call's screen": "A hívás képernyőjét is olvassa",
+  "Record with screen": "Felvétel képernyővel",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "A Yogurt nem tudja olvasni a hívás képernyőjét. Engedélyezd a képernyőfelvételt a Rendszerbeállításokban.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "A feltöltött videó és a hívás képernyőjéről olvasott képek megmaradnak, hogy újra olvashatók legyenek. Nélkülük a képernyő később már nem olvasható, például egy másik modellel."
 }

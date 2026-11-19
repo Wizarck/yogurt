@@ -1,5 +1,5 @@
 import {previousSpeaker} from '../../shared/transcriptReplacement'
-import { AUDIO_SPEAKER } from '../../shared/audioUpload'
+import { AUDIO_SPEAKER, SCREEN_SPEAKER } from '../../shared/audioUpload'
 import { onCaptureStart, recordingFinished, type TranscribeWarn, type Track } from '../capture'
 import { onMeetingStart, onMeetingStop } from '../meeting'
 import { isFake } from '../paths'
@@ -304,7 +304,8 @@ function sweepEcho(id: string, s: Session) {
   try {
     const pipe = s.pipeline
     // A resumed session may overlap the previous final line; its audio cannot reclassify saved words.
-    const lines = store.segments(id).filter(line => !s.priorLines.has(line.id)), them = lines.filter(line => line.track === 'them')
+    // a line read from the call's screen was never heard, so a me line saying the same words is no echo of it
+    const lines = store.segments(id).filter(line => !s.priorLines.has(line.id)), them = lines.filter(line => line.track === 'them' && line.speaker !== SCREEN_SPEAKER)
     const matches = lines.filter(line => line.track === 'me').map(line => ({ id: line.id, confidence: echoConfidence(line, them, { echo: true, correlatedAt: ms => pipe.echoAt(ms), over: (a, b) => pipe.echoOver(a, b) }) }))
     const gone = matches.filter(line => line.confidence).map(line => line.id)
     if (!gone.length) return

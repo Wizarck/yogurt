@@ -95,6 +95,7 @@
 @keyframes call-countdown { to { transform:scaleX(0); } }
 @media (prefers-reduced-motion:reduce) { .call-prompt-countdown { animation-timing-function:steps(12,end); } }
 .call-prompt button:focus-visible { outline:2px solid var(--focus);outline-offset:2px; }
+.call-prompt-screen[aria-pressed=true] { color:var(--accent);background:color-mix(in srgb, var(--accent) 12%, transparent); }
 
 @container (max-width:600px) {
   .settings-content { padding:25px 22px 30px; }

@@ -60,10 +60,12 @@ export const setFakeCalendar = (o: { status?: string; events?: unknown[] | null 
 const startAs = (process.env.YOGURT_FAKE_PERMISSIONS ?? 'granted') as FakeAccess
 type FakeAccess = 'granted' | 'denied' | 'unknown' | 'restricted'
 /** YOGURT_FAKE_MIC, YOGURT_FAKE_NOTIFICATIONS and YOGURT_FAKE_AX override one of them (restricted: a managed Mac) */
-export const fakeAccess: Record<'mic' | 'systemAudio' | 'notifications' | 'accessibility', FakeAccess> = {
+export const fakeAccess: Record<'mic' | 'systemAudio' | 'notifications' | 'accessibility' | 'screen', FakeAccess> = {
   mic: (process.env.YOGURT_FAKE_MIC as FakeAccess) ?? startAs, systemAudio: startAs, notifications: (process.env.YOGURT_FAKE_NOTIFICATIONS as FakeAccess) ?? startAs,
   // YOGURT_FAKE_AX: Accessibility on its own (names from the fake Zoom call need it)
   accessibility: (process.env.YOGURT_FAKE_AX as FakeAccess) ?? startAs,
+  // Screen Recording, for reading a call's window (permission(['screen', 'denied']) turns it off)
+  screen: startAs,
 }
 /** YOGURT_FAKE_PLAYER=1: Music is running, and the Mac hasn't asked about controlling it yet */
 let playerAsked = process.env.YOGURT_FAKE_PLAYER !== '1'

@@ -791,7 +791,6 @@
   "Reading the screen…": "קורא את המסך…",
   "Delete video": "מחיקת וידאו",
   "Don't keep it": "לא לשמור",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "וידאו שהועלה נשמר כדי שאפשר יהיה לקרוא את המסך שלו שוב. בלעדיו אי אפשר לקרוא את המסך מאוחר יותר, למשל באמצעות מודל אחר.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "פגישה אחת כבר עומדת בתנאי. הווידאו שלה נמחק עכשיו.",
     "two": "{count} פגישות כבר עומדות בתנאי. סרטוני הווידאו שלהן נמחקים עכשיו.",
@@ -841,5 +840,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "סיכומים צריכים מודל AI. מכיוון ש־Yogurt AI לא נמצא במחשב הזה, כדאי לבחור מודל לסיכומים בהגדרות ← מודלים של AI.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "עדיין אפשר להקליט ולתמלל כאן, ולתת לשרת שלך או לאפליקציית AI לכתוב את הסיכומים (הגדרות ← מודלים של AI).",
   "Continue without Yogurt AI": "המשך בלי Yogurt AI",
-  "Pick an AI model for summaries in Settings": "כדאי לבחור מודל AI לסיכומים בהגדרות"
+  "Pick an AI model for summaries in Settings": "כדאי לבחור מודל AI לסיכומים בהגדרות",
+  "Also read the call's screen": "לקרוא גם את מסך השיחה",
+  "Record with screen": "הקלטה עם מסך",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt לא יכול לקרוא את מסך השיחה. יש לאפשר הקלטת מסך בהגדרות המערכת.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "וידאו שהועלה והתמונות שנקראו ממסך של שיחה נשמרים כדי שאפשר יהיה לקרוא אותם שוב. בלעדיהם אי אפשר לקרוא את המסך מאוחר יותר, למשל באמצעות מודל אחר."
 }

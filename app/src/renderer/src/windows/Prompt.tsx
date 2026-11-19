@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { X } from 'lucide-react'
+import { MonitorUp, X } from 'lucide-react'
 import type { PromptView } from '../../../shared/types'
 import { Logo } from '../components/Logo'
 import { t } from '../../../shared/i18n'
@@ -11,6 +11,8 @@ export function Prompt() {
   const [hovered, setHovered] = useState(false)
   const [focused, setFocused] = useState(false)
   const [countdown, setCountdown] = useState(0)
+  // off each time the card shows: reading the call's window is chosen per call
+  const [screen, setScreen] = useState(false)
   useEffect(() => { void window.yogurt.prompt.state().then(setView) }, [])
   useEffect(() => {
     if (view?.kind !== 'start' || hovered || focused) return
@@ -37,9 +39,17 @@ export function Prompt() {
       </div>
       <div className="call-prompt-actions">
         {start ? (
-          <button data-testid="prompt-take-notes" className="workspace-button" onClick={() => window.yogurt.prompt.act('take-notes')}>
-            {t('Start recording')}
-          </button>
+          <>
+            {view.screen && (
+              <button data-testid="prompt-screen" aria-pressed={screen} aria-label={t("Also read the call's screen")} title={t("Also read the call's screen")}
+                className="ghost-btn workspace-icon call-prompt-screen" onClick={() => setScreen(on => !on)}>
+                <MonitorUp size={16} strokeWidth={1.5} aria-hidden="true" />
+              </button>
+            )}
+            <button data-testid="prompt-take-notes" className="workspace-button" onClick={() => window.yogurt.prompt.act(screen ? 'take-notes-screen' : 'take-notes')}>
+              {screen ? t('Record with screen') : t('Start recording')}
+            </button>
+          </>
         ) : (
           <>
             <button data-testid="prompt-keep-going" className="workspace-button" onClick={() => window.yogurt.prompt.act('keep-going')}>

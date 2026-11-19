@@ -21,6 +21,7 @@ The other permissions are optional:
 - **Calendar:** show upcoming meetings and use their titles and attendees.
 - **Notifications:** offer to take notes when a call starts.
 - **Accessibility:** read speaker names from supported call apps.
+- **Screen Recording:** read the text on a call's window, when you choose it for that call ([Read a call's screen](#read-a-calls-screen)). macOS asks the first time; after you allow it, it may ask you to quit and reopen Yogurt.
 
 If a permission is off, use its button in Yogurt's Settings to open the right system pane. After changing it, return to Yogurt. Recording always waits for your click.
 
@@ -72,7 +73,7 @@ Meetings, recordings, settings and downloaded models live here:
 Everything is kept until you choose otherwise in **Settings → What Yogurt keeps**. Each rule counts from when a meeting ended:
 
 - **Delete audio:** once the summary is saved, or after a week, a month, 3 months, a year, or any number of days.
-- **Delete video:** the copy of an uploaded video. **Don't keep it** saves no copy: its screen is read once while uploading and can't be read again later.
+- **Delete video:** the copy of an uploaded video, and the pictures read from a call's window. **Don't keep it** saves neither: the screen is read once, while uploading or during the call, and can't be read again later.
 - **Delete transcripts:** the transcript and its audio go; the notes stay, and are no longer written again.
 - **Move meetings to the Trash:** they are deleted for good 30 days later, unless restored.
 
@@ -81,6 +82,15 @@ Audio and transcripts go only from meetings whose summary is saved. When a new r
 ## Upload a recording
 
 Upload an MP3, M4A or WAV, or a screen recording (MOV or MP4), and Yogurt transcribes it into a new note. On a Mac, text shown on a video's screen is read on this computer and added to the transcript as **Screen** lines at the time it was shown, so the notes and Ask can use it.
+
+## Read a call's screen
+
+On a Mac, the **Take notes?** card that shows when a call starts has a screen button next to **Start recording**. Turn it on, and the button reads **Record with screen**: while the meeting records, Yogurt reads the text on the call's window every 2 seconds, on this computer, and adds it to the transcript as **Screen** lines as it changes, so the notes and Ask can use what was shared.
+
+- Only the call's window is read: Zoom's or Teams' meeting window, or the browser window while it shows the call's tab (a Meet tab, for example). Other apps and other tabs never are.
+- It is chosen for each call, and it is off unless you turn it on. A recording started from Yogurt itself reads no screen.
+- Pausing the recording pauses it too. If Screen Recording is off, the note says so and the call is recorded as usual.
+- The pictures read are kept with the meeting until **Delete video** in [What Yogurt keeps](#what-yogurt-keeps) removes them.
 
 ## Backup and restore
 

@@ -784,7 +784,6 @@
   "Reading the screen…": "Luetaan näyttöä…",
   "Delete video": "Poista video",
   "Don't keep it": "Älä säilytä",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Ladattu video säilytetään, jotta sen näyttö voidaan lukea uudelleen. Ilman sitä näyttöä ei voi lukea myöhemmin, esimerkiksi toisella mallilla.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} kokous täyttää jo ehdon. Sen video poistetaan nyt.",
     "other": "{count} kokousta täyttää jo ehdon. Niiden videot poistetaan nyt."
@@ -833,5 +832,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Yhteenvedot tarvitsevat tekoälymallin. Yogurt AI ei ole tällä tietokoneella, joten valitse malli yhteenvedoille kohdassa Asetukset → Tekoälymallit.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Voit silti tallentaa ja litteroida täällä ja antaa oman palvelimesi tai tekoälysovelluksen kirjoittaa yhteenvedot (Asetukset → Tekoälymallit).",
   "Continue without Yogurt AI": "Jatka ilman Yogurt AI:ta",
-  "Pick an AI model for summaries in Settings": "Valitse tekoälymalli yhteenvedoille kohdassa Asetukset"
+  "Pick an AI model for summaries in Settings": "Valitse tekoälymalli yhteenvedoille kohdassa Asetukset",
+  "Also read the call's screen": "Lue myös puhelun näyttö",
+  "Record with screen": "Tallenna näytön kanssa",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt ei voi lukea puhelun näyttöä. Salli näytön tallennus Järjestelmäasetuksissa.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Ladattu video ja puhelun näytöltä luetut kuvat säilytetään, jotta ne voidaan lukea uudelleen. Ilman niitä näyttöä ei voi lukea myöhemmin, esimerkiksi toisella mallilla."
 }

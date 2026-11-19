@@ -766,7 +766,6 @@
   "Reading the screen…": "स्क्रीन पढ़ी जा रही है…",
   "Delete video": "वीडियो मिटाएँ",
   "Don't keep it": "न रखें",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "अपलोड किया गया वीडियो रखा जाता है ताकि उसकी स्क्रीन फिर से पढ़ी जा सके। इसके बिना स्क्रीन बाद में नहीं पढ़ी जा सकती, जैसे किसी दूसरे मॉडल से।",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} मीटिंग पहले से इस नियम में आती है। उसका वीडियो अभी मिटाया जाएगा।",
     "other": "{count} मीटिंग्स पहले से इस नियम में आती हैं। उनके वीडियो अभी मिटाए जाएँगे।"
@@ -815,5 +814,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "सारांशों के लिए AI मॉडल चाहिए। Yogurt AI इस कंप्यूटर पर नहीं है, इसलिए सेटिंग्स → AI मॉडल में सारांश के लिए कोई मॉडल चुनें।",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "आप यहां अब भी रिकॉर्ड और ट्रांसक्राइब कर सकते हैं, और सारांश अपने सर्वर या किसी AI ऐप से लिखवा सकते हैं (सेटिंग्स → AI मॉडल)।",
   "Continue without Yogurt AI": "Yogurt AI के बिना जारी रखें",
-  "Pick an AI model for summaries in Settings": "सेटिंग्स में सारांश के लिए कोई AI मॉडल चुनें"
+  "Pick an AI model for summaries in Settings": "सेटिंग्स में सारांश के लिए कोई AI मॉडल चुनें",
+  "Also read the call's screen": "कॉल की स्क्रीन भी पढ़ें",
+  "Record with screen": "स्क्रीन के साथ रिकॉर्ड करें",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt कॉल की स्क्रीन नहीं पढ़ पा रहा। सिस्टम सेटिंग्ज़ में स्क्रीन रिकॉर्डिंग की अनुमति दें।",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "अपलोड किया गया वीडियो और कॉल की स्क्रीन से पढ़ी गई तस्वीरें रखी जाती हैं ताकि उन्हें फिर से पढ़ा जा सके। इनके बिना स्क्रीन बाद में नहीं पढ़ी जा सकती, जैसे किसी दूसरे मॉडल से।"
 }

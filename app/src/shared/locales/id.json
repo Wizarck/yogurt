@@ -727,7 +727,6 @@
   "Reading the screen…": "Membaca layar…",
   "Delete video": "Hapus video",
   "Don't keep it": "Jangan simpan",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Video yang diunggah disimpan agar layarnya bisa dibaca lagi. Tanpa video itu, layar tidak bisa dibaca nanti, misalnya dengan model lain.",
   "{count} meetings already qualify. Their videos are deleted now.": "{count} rapat sudah memenuhi aturan. Videonya dihapus sekarang.",
   "Edit or regenerate summary": "Sunting atau buat ulang ringkasan",
   "Edit summary": "Sunting ringkasan",
@@ -773,5 +772,9 @@
   "Summaries need an AI model. Yogurt AI is not on this computer, so pick one for summaries in Settings → AI models.": "Ringkasan memerlukan model AI. Yogurt AI tidak ada di komputer ini, jadi pilih satu untuk ringkasan di Pengaturan → Model AI.",
   "You can still record and transcribe here, and have your own server or an AI app write the summaries (Settings → AI models).": "Anda tetap dapat merekam dan mentranskripsikan di sini, dan meminta server Anda sendiri atau aplikasi AI menulis ringkasannya (Pengaturan → Model AI).",
   "Continue without Yogurt AI": "Lanjutkan tanpa Yogurt AI",
-  "Pick an AI model for summaries in Settings": "Pilih model AI untuk ringkasan di Pengaturan"
+  "Pick an AI model for summaries in Settings": "Pilih model AI untuk ringkasan di Pengaturan",
+  "Also read the call's screen": "Baca juga layar panggilan",
+  "Record with screen": "Rekam dengan layar",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt tidak bisa membaca layar panggilan. Izinkan perekaman layar di Pengaturan Sistem.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Video yang diunggah dan gambar yang dibaca dari layar panggilan disimpan agar bisa dibaca lagi. Tanpa itu, layar tidak bisa dibaca nanti, misalnya dengan model lain."
 }
