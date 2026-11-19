@@ -4,6 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { decide, useCallApps } from '../src/main/detect'
 import { hookLiveScreen, liveScreenArgs, readLiveLine, type ScreenProc } from '../src/main/liveScreen'
 import { WidgetModel } from '../src/main/widgetModel'
+import { widgetSettings } from '../src/shared/widgetMorph'
 
 /** a stand-in screen-live: what it was given on stdin, and a way to make it print or die */
 function proc() {
@@ -128,7 +129,8 @@ describe('the recording note', () => {
     const m = new WidgetModel('darwin')
     m.start({ id: 'm1', title: 'Sync', startedAt: 0 })
     m.warn('no-screen-access')
-    expect(m.view(1000)?.note).toEqual({ tone: 'hint', text: "Yogurt can't read the call's screen. Allow screen recording in System Settings." })
+    expect(m.view(1000)?.note).toEqual({ tone: 'hint', code: 'no-screen-access', text: "Yogurt can't read the call's screen. Allow screen recording in System Settings." })
+    expect(widgetSettings(m.view(1000)?.note ?? null)).toBe('systemAudio')
   })
 })
 

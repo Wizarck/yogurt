@@ -17,7 +17,7 @@ import { isAppRoute } from '../shared/routes'
 import { resumesNote } from '../shared/agendaNote'
 import { relaunchOptions, stripAppImageEnv } from './relaunch'
 import { capabilities, micListHelper, platformOf, supportedKinds } from '../shared/platform'
-import { app, BrowserWindow, dialog, ipcMain, nativeTheme, Notification, protocol, safeStorage, shell } from 'electron'
+import { app, BrowserWindow, desktopCapturer, dialog, ipcMain, nativeTheme, Notification, protocol, safeStorage, shell } from 'electron'
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import os from 'node:os'
 import { spawn } from 'node:child_process'
@@ -635,7 +635,12 @@ app.whenReady().then(() => {
       try { store.addSegments([seg]) } catch (e) { console.error('saving a screen line failed', e); return }
       win?.webContents.send('transcript:segment', { ...seg, speakerColor: speakerColor(seg.track, seg.speaker, []) })
     },
-    noAccess: () => tell({ t: 'warn', code: 'no-screen-access' }),
+    noAccess: () => {
+      tell({ t: 'warn', code: 'no-screen-access' })
+      // the helper's own request can't prompt (a child without a window): Yogurt asks, which shows the Mac's prompt
+      // and lists Yogurt under Screen & System Audio Recording
+      if (!isFake()) desktopCapturer.getSources({ types: ['screen'], thumbnailSize: { width: 0, height: 0 } }).catch(() => {})
+    },
     start: (args) => {
       if (isFake()) return fakeScreenProc(args, () => fakeAccess.screen === 'granted')
       const child = spawn(audioHelperPath(), args, { stdio: ['pipe', 'pipe', 'pipe'], windowsHide: true })
