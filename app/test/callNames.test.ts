@@ -6,6 +6,7 @@ import { join } from 'node:path'
 import { openStore, type Meeting, type Store } from '../src/main/store'
 import { hookCallNames, watchIds, type WatchLine } from '../src/main/callNames'
 import { readCall, type AxNode } from '../src/main/callNames/parse'
+import { SCREEN_SPEAKER } from '../src/shared/audioUpload'
 
 const dirs: string[] = [], stores: Store[] = []
 afterEach(() => { stores.splice(0).forEach((s) => s.close()); dirs.splice(0).forEach((d) => rmSync(d, { recursive: true, force: true })) })
@@ -262,6 +263,20 @@ describe('hookCallNames', () => {
     // main.log is pasted into public issues: no one's name reaches it, only counts and shapes
     for (const name of ['Alex Morgan', 'Dana Smith', 'Ann Lee']) expect(s.logs.join('\n')).not.toContain(name)
     expect(s.logs.some((l) => /talking 1 of 3/.test(l))).toBe(true)
+  })
+
+  it("a line read from the call's screen is nobody's: naming the other side afterwards leaves it Screen", async () => {
+    const s = setup({ attendees: [{ name: 'Dana Smith', email: 'dana@example.com' }] })
+    s.start()
+    s.audio(0, 1_000_100)
+    s.store.addSegments([
+      { meetingId: s.m.id, track: 'them', startMs: 1000, endMs: 3000, text: 'early', speaker: null },
+      { meetingId: s.m.id, track: 'them', startMs: 2000, endMs: 2000, text: 'Q3 roadmap', speaker: SCREEN_SPEAKER },
+    ])
+    for (let t = 1_000_000; t < 1_005_000; t += 500) s.emit(zoomLine(t, ['Alex Morgan', 'Dana Smith', 'Ann Lee'], 'Dana Smith', 'Alex Morgan'))
+    s.stop(); s.transcribed()
+    await s.hook.finished(s.m.id)
+    expect(s.store.segments(s.m.id).map((x) => x.speaker)).toEqual(['Dana Smith', SCREEN_SPEAKER])
   })
 
   it('without Accessibility, or with nothing read, every line stays Them and nothing changes', async () => {

@@ -22,6 +22,7 @@ import { capabilities, micListHelper, platformOf, supportedKinds } from '../shar
 import { app, BrowserWindow, dialog, ipcMain, nativeTheme, Notification, protocol, safeStorage, screen, shell } from 'electron'
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import os from 'node:os'
+import { spawn } from 'node:child_process'
 import { basename, join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { isFake, userDataDir } from './paths'
@@ -87,6 +88,9 @@ import { startedHidden } from './mcp/paths'
 import { deleteRecording } from './deleteRecording'
 import { dueNow, isDue, retentionPatch, ruleOf, sweep } from './retention'
 import { readScreen } from './screenText'
+import { hookLiveScreen, SCREEN_FRAMES } from './liveScreen'
+import { fakeScreenProc } from './fakeScreen'
+import { SCREEN_SPEAKER } from '../shared/audioUpload'
 import { RETENTION_KINDS, retentionDays, type RetentionKind } from '../shared/retention'
 import { AUDIO_SCHEME, audioExts, createAudioHandler, trackFile, type AudioExt } from './audio'
 import { helperDecode, wavDecode } from './asr/backfill'
@@ -222,6 +226,8 @@ useCallApps(isFake() ? 'darwin' : process.platform)
 const audioHelper = createHelperRunner(audioHelperPath)
 /** Windows: the recorder said the mic is blocked (Privacy & security), until a recording hears it again */
 let micBlocked = false
+/** reads a call's window while it records, when chosen on the card (set up with the recorder) */
+let liveScreen: ReturnType<typeof hookLiveScreen> | undefined
 onCaptureStart(() => { micBlocked = false })
 onRecordingEvent((e) => { if (e.t === 'warn' && e.code === 'no-mic') micBlocked = true })
 
@@ -342,7 +348,13 @@ function startDetection() {
   onMeetingStop(() => { watcher.cleared() })
   const prompts = createPrompts({
     windowVisible: () => !!win && win.isVisible() && !win.isMinimized(),
-    takeNotes: (p) => begin({ title: p.title || t('{app} call', { app: p.app ?? '' }).trim(), event: p.event, app: p.app }),
+    takeNotes: (p, screen) => {
+      // only the meeting this card starts reads the call's window; one already recording, or a finished note, does not
+      liveScreen?.next(screen && p.screen ? p.screen : null)
+      try { begin({ title: p.title || t('{app} call', { app: p.app ?? '' }).trim(), event: p.event, app: p.app }) } finally { liveScreen?.next(null) }
+    },
+    // a call's window is read on a Mac only (Windows and Linux: see the PR notes)
+    screen: (p) => platform === 'darwin' && !!p.screen,
     stop: (id) => { stopMeeting(id) },
     dismissed: (key) => watcher.dismiss(key),
     keepGoing: () => watcher.keepGoing(),
@@ -656,6 +668,26 @@ app.whenReady().then(() => {
     mic: () => loadSettings(settingsFile).mic ?? null,
     // recording that can't go on ends the meeting, with the notes kept
     stopMeeting: (id) => { stopMeeting(id) } })
+  // the call's window as Screen lines while it records, when the person chose it on the card
+  liveScreen = hookLiveScreen({
+    dirOf: (id) => join(userDataDir(), 'meetings', id), onStart: onMeetingStart, onStop: onMeetingStop,
+    onPaused: (fn) => onRecordingEvent((e) => { if (e.t === 'paused') fn(e.meetingId, e.paused) }),
+    meetingMs: () => activeCapture()?.endMs ?? 0,
+    keepFrames: () => ruleOf(loadSettings(settingsFile), 'video')?.days !== 0,
+    line: (id, l) => {
+      const seg = { meetingId: id, track: 'them' as const, startMs: l.ms, endMs: l.ms, text: l.text, speaker: SCREEN_SPEAKER }
+      try { store.addSegments([seg]) } catch (e) { console.error('saving a screen line failed', e); return }
+      win?.webContents.send('transcript:segment', { ...seg, speakerColor: speakerColor(seg.track, seg.speaker, []) })
+    },
+    noAccess: () => tell({ t: 'warn', code: 'no-screen-access' }),
+    start: (args) => {
+      if (isFake()) return fakeScreenProc(args, () => fakeAccess.screen === 'granted')
+      const child = spawn(audioHelperPath(), args, { stdio: ['pipe', 'pipe', 'pipe'], windowsHide: true })
+      child.stderr.on('data', (d: Buffer) => console.error('yogurt-audio screen-live:', d.toString().trim()))
+      child.on('error', (e) => { console.error('yogurt-audio screen-live failed to start', e); child.emit('exit', null, null) })
+      return child
+    },
+  })
   // 32 GB and up: the notes model reads each meeting in as it happens (notes/readAhead.ts)
   const readsAhead = !isFake() && readAheadAllowed(os.totalmem())
   // the notes model: one job at a time, recording first; loaded when needed, the best one downloaded
@@ -1093,11 +1125,12 @@ app.whenReady().then(() => {
   ipcMain.handle('meetings:empty-trash', () => emptyTrash({ store, remove: removeForGood }))
   // What Yogurt keeps (Settings): each rule runs at launch, twice a day with the Trash, and once picked
   const hasAudio = (id: string) => (['me', 'them'] as const).some((t) => !!trackFile(meetingDir(id), t, audioKinds))
-  const videos = (id: string) => { try { return readdirSync(meetingDir(id)).filter((f) => /^video\.(mov|mp4)$/.test(f)) } catch { return [] } }
+  // an uploaded video's copy, and the pictures read from a call's window
+  const videos = (id: string) => { try { return readdirSync(meetingDir(id)).filter((f) => /^video\.(mov|mp4)$/.test(f) || f === SCREEN_FRAMES) } catch { return [] } }
   const hasVideo = (id: string) => videos(id).length > 0
   const retain = () => void sweep({
     store, settings: loadSettings(settingsFile), hasAudio, hasVideo,
-    removeVideo: (id) => { for (const f of videos(id)) rmSync(join(meetingDir(id), f), { force: true }) },
+    removeVideo: (id) => { for (const f of videos(id)) rmSync(join(meetingDir(id), f), { force: true, recursive: true }) },
     removeAudio: (id) => removeRecording(id, () => false),
     removeTranscript: (id) => { store.deleteTranscript(id); indexer.forget(id); void indexer.schedule(); win?.webContents.send('meetings:changed') },
     trash: (id) => { if (id !== resumingId && !stopSavePending(id)) moveToTrash(id, { store, moved: trashed }) },

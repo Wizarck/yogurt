@@ -1,8 +1,11 @@
 import type { CalEvent } from './calendar'
+import type { ScreenTarget } from './liveScreen'
 
 export type MicApp = { bundleId: string; name: string; /** the process on the mic */ pid?: number; /** the window's title, when known */ title?: string }
 export type Signals = { micApps: MicApp[]; events: CalEvent[]; recording: boolean; /** owners confirmed by NSRunningApplication */ runningApps?: string[] }
-export type Prompt = { key: string; /** the event's title; empty with no event (the window words it) */ title: string; app: string | null; event: CalEvent | null }
+export type Prompt = { key: string; /** the event's title; empty with no event (the window words it) */ title: string; app: string | null; event: CalEvent | null
+  /** the call's window, which the card can offer to read */
+  screen?: ScreenTarget }
 /** keys of prompts the person closed */
 export type Dismissals = ReadonlySet<string>
 
@@ -124,7 +127,7 @@ export function decide(s: Signals, now: number, recent: Dismissals): Prompt | nu
     // one meeting, one key: the event's, else the app's
     const key = event ? `event:${event.id}:${event.start}` : `app:${app.id}`
     if (recent.has(key)) continue
-    return { key, title: event?.title ?? '', app: app.name, event }
+    return { key, title: event?.title ?? '', app: app.name, event, screen: { appId: app.id, title: m.title ?? '', browser: !!app.browser } }
   }
   return null
 }

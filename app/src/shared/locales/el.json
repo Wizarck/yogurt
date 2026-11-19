@@ -796,9 +796,12 @@
   "Reading the screen…": "Ανάγνωση της οθόνης…",
   "Delete video": "Διαγραφή βίντεο",
   "Don't keep it": "Να μην κρατηθεί",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Ένα μεταφορτωμένο βίντεο διατηρείται, ώστε η οθόνη του να μπορεί να διαβαστεί ξανά. Χωρίς αυτό, η οθόνη δεν μπορεί να διαβαστεί αργότερα, για παράδειγμα με άλλο μοντέλο.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} σύσκεψη πληροί ήδη τον κανόνα. Το βίντεό της διαγράφεται τώρα.",
     "other": "{count} συσκέψεις πληρούν ήδη τον κανόνα. Τα βίντεό τους διαγράφονται τώρα."
-  }
+  },
+  "Also read the call's screen": "Ανάγνωση και της οθόνης της κλήσης",
+  "Record with screen": "Ηχογράφηση με οθόνη",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Το Yogurt δεν μπορεί να διαβάσει την οθόνη της κλήσης. Επιτρέψτε την εγγραφή οθόνης στις Ρυθμίσεις συστήματος.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Ένα μεταφορτωμένο βίντεο και οι εικόνες που διαβάστηκαν από την οθόνη μιας κλήσης διατηρούνται, ώστε να μπορούν να διαβαστούν ξανά. Χωρίς αυτά, η οθόνη δεν μπορεί να διαβαστεί αργότερα, για παράδειγμα με άλλο μοντέλο."
 }

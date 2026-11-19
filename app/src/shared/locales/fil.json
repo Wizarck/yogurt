@@ -793,9 +793,12 @@
   "Reading the screen…": "Binabasa ang screen…",
   "Delete video": "Burahin ang video",
   "Don't keep it": "Huwag itago",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Itinatago ang na-upload na video para mabasa ulit ang screen nito. Kung wala ito, hindi na mababasa ang screen sa ibang pagkakataon, halimbawa gamit ang ibang modelo.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "Pasok na sa patakaran ang {count} meeting. Buburahin na ngayon ang video nito.",
     "other": "Pasok na sa patakaran ang {count} na meeting. Buburahin na ngayon ang mga video ng mga ito."
-  }
+  },
+  "Also read the call's screen": "Basahin din ang screen ng tawag",
+  "Record with screen": "Mag-record kasama ang screen",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Hindi mabasa ng Yogurt ang screen ng tawag. Payagan ang screen recording sa System Settings.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Itinatago ang na-upload na video at ang mga larawang nabasa mula sa screen ng tawag para mabasa ulit ang mga ito. Kung wala ang mga ito, hindi na mababasa ang screen sa ibang pagkakataon, halimbawa gamit ang ibang modelo."
 }

@@ -1,5 +1,6 @@
 import type { RecordingStart } from '../meeting'
 import type { Meeting, Store } from '../store'
+import { SCREEN_SPEAKER } from '../../shared/audioUpload'
 import { nameFor, othersIn, type CallSample } from './attribute'
 import { readCall, summarize, type AxWindow, type CallKind } from './parse'
 
@@ -165,8 +166,8 @@ export function hookCallNames(p: {
       await p.transcribed(m.id)
       const tl = timeline(s)
       const o = { myNames: p.myNames() }
-      // every line of the other side again, now that the whole call is known
-      const lines = p.store.segments(m.id, { hidden: true }).filter((x) => x.track === 'them' && !s.priorLines.has(x.id))
+      // every line of the other side again, now that the whole call is known (a line read from the screen is nobody's)
+      const lines = p.store.segments(m.id, { hidden: true }).filter((x) => x.track === 'them' && x.speaker !== SCREEN_SPEAKER && !s.priorLines.has(x.id))
       const names = lines.map((x) => ({ id: x.id, speaker: nameFor(x, tl, o) }))
       const moved = names.filter((x, i) => x.speaker !== lines[i].speaker)
       if (moved.length) p.store.setSegmentSpeakers(moved)

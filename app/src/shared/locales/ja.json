@@ -742,6 +742,9 @@
   "Reading the screen…": "画面を読んでいます…",
   "Delete video": "ビデオを削除",
   "Don't keep it": "残さない",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "アップロードしたビデオは、画面をもう一度読み取れるように残ります。ビデオがないと、別のモデルを使うなどして後から画面を読み取ることはできません。",
-  "{count} meetings already qualify. Their videos are deleted now.": "{count}件のミーティングがすでに対象です。ビデオを今すぐ削除します。"
+  "{count} meetings already qualify. Their videos are deleted now.": "{count}件のミーティングがすでに対象です。ビデオを今すぐ削除します。",
+  "Also read the call's screen": "通話の画面も読み取る",
+  "Record with screen": "画面付きで録音",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurtは通話の画面を読み取れません。システム設定で画面収録を許可してください。",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "アップロードしたビデオと、通話の画面から読み取った画像は、もう一度読み取れるように残ります。これらがないと、別のモデルを使うなどして後から画面を読み取ることはできません。"
 }

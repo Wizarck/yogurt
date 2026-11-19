@@ -16,10 +16,13 @@
 //   {"t":"mic","uid":string|null,"name":string|null}   the mic recording now, after each start: uid null is Auto (the Mac's default input)
 //   {"t":"speech","track":"me"|"them","final":bool,"startMs","endMs","text","words":[{"text","startMs","endMs"}]}  Apple's on-device speech (record --speech LOCALE, macOS 26)
 // yogurt-audio speech-locales → {"available","supported":[bcp47],"installed":[bcp47]}; speech-install LOCALE → {"installed":bool}
+// yogurt-audio screen-text FILE (an uploaded video) and screen-live --app BUNDLE_ID (a call's window): its text, see below
 // stdin: pause, resume, stop (end of input also stops), mic UID or mic auto (switch without stopping). Problems go to stderr.
 import AVFoundation
 import Speech
 import Vision
+import ScreenCaptureKit
+import ImageIO
 import CoreAudio
 import Darwin
 import Foundation
@@ -1142,9 +1145,42 @@ if args.count >= 3, args[1] == "decode" {
   }
   exit(0)
 }
-// An uploaded video's screen as text, read by Vision on this Mac: a frame every 2 s, read again only when the picture
-// changed, and kept only when its words did (a clock or a cursor moving is not new). One {"ms","text"} line per change
-// and {"fraction"} as it goes, on stdout. A video with no picture prints nothing.
+// A screen's text, read by Vision on this Mac (screen-text and screen-live): a picture is read again only when it
+// changed, and its text kept only when its words did (a clock or a cursor moving is not new).
+final class ScreenReader {
+  private var picture: [UInt8] = [], words = Set<String>()
+  // a 96×54 grey copy: enough to see a new line of text appear, too small to notice compression noise
+  private func thumbnail(_ image: CGImage) -> [UInt8] {
+    var px = [UInt8](repeating: 0, count: 96 * 54)
+    px.withUnsafeMutableBytes { buf in
+      guard let c = CGContext(data: buf.baseAddress, width: 96, height: 54, bitsPerComponent: 8, bytesPerRow: 96, space: CGColorSpaceCreateDeviceGray(), bitmapInfo: CGImageAlphaInfo.none.rawValue) else { return }
+      c.draw(image, in: CGRect(x: 0, y: 0, width: 96, height: 54))
+    }
+    return px
+  }
+  /** the picture's text when it is new, else nil */
+  func read(_ image: CGImage) -> String? {
+    let next = thumbnail(image)
+    guard picture.isEmpty || zip(picture, next).filter({ abs(Int($0) - Int($1)) > 16 }).count >= 4 else { return nil }
+    picture = next
+    let read = VNRecognizeTextRequest()
+    read.recognitionLevel = .accurate
+    read.usesLanguageCorrection = true
+    read.automaticallyDetectsLanguage = true
+    try? VNImageRequestHandler(cgImage: image).perform([read])
+    let lines = (read.results ?? []).compactMap { $0.topCandidates(1).first?.string.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
+    let seen = Set(lines), shared = Double(seen.intersection(words).count) / Double(max(1, seen.union(words).count))
+    guard !lines.isEmpty && shared < 0.8 else { return nil }
+    words = seen
+    return lines.joined(separator: "\n")
+  }
+}
+func emitLine(_ o: [String: Any]) {
+  // the reader gone (Yogurt quit, the upload was cancelled or the meeting stopped): stop quietly
+  guard let d = try? JSONSerialization.data(withJSONObject: o), (try? FileHandle.standardOutput.write(contentsOf: d + Data([10]))) != nil else { exit(0) }
+}
+// An uploaded video's screen as text: a frame every 2 s, one {"ms","text"} line per change and {"fraction"} as it goes,
+// on stdout. A video with no picture prints nothing.
 if args.count >= 3, args[1] == "screen-text" {
   let asset = AVURLAsset(url: URL(fileURLWithPath: args[2]))
   let seconds = CMTimeGetSeconds(asset.duration)
@@ -1154,39 +1190,91 @@ if args.count >= 3, args[1] == "screen-text" {
   frames.requestedTimeToleranceBefore = CMTime(seconds: 0.5, preferredTimescale: 600)
   frames.requestedTimeToleranceAfter = CMTime(seconds: 0.5, preferredTimescale: 600)
   frames.maximumSize = CGSize(width: 2560, height: 2560)
-  func emit(_ o: [String: Any]) {
-    // the reader gone (Yogurt quit or the upload was cancelled): stop quietly
-    guard let d = try? JSONSerialization.data(withJSONObject: o), (try? FileHandle.standardOutput.write(contentsOf: d + Data([10]))) != nil else { exit(0) }
-  }
-  // a 96×54 grey copy: enough to see a new line of text appear, too small to notice compression noise
-  func thumbnail(_ image: CGImage) -> [UInt8] {
-    var px = [UInt8](repeating: 0, count: 96 * 54)
-    px.withUnsafeMutableBytes { buf in
-      guard let c = CGContext(data: buf.baseAddress, width: 96, height: 54, bitsPerComponent: 8, bytesPerRow: 96, space: CGColorSpaceCreateDeviceGray(), bitmapInfo: CGImageAlphaInfo.none.rawValue) else { return }
-      c.draw(image, in: CGRect(x: 0, y: 0, width: 96, height: 54))
-    }
-    return px
-  }
-  var picture: [UInt8] = [], words = Set<String>(), at = 0.0
+  let reader = ScreenReader()
+  var at = 0.0
   while at < seconds {
     autoreleasepool {
       guard let image = try? frames.copyCGImage(at: CMTime(seconds: at, preferredTimescale: 600), actualTime: nil) else { return }
-      let next = thumbnail(image)
-      guard picture.isEmpty || zip(picture, next).filter({ abs(Int($0) - Int($1)) > 16 }).count >= 4 else { return }
-      picture = next
-      let read = VNRecognizeTextRequest()
-      read.recognitionLevel = .accurate
-      read.usesLanguageCorrection = true
-      read.automaticallyDetectsLanguage = true
-      try? VNImageRequestHandler(cgImage: image).perform([read])
-      let lines = (read.results ?? []).compactMap { $0.topCandidates(1).first?.string.trimmingCharacters(in: .whitespaces) }.filter { !$0.isEmpty }
-      let seen = Set(lines), shared = Double(seen.intersection(words).count) / Double(max(1, seen.union(words).count))
-      if !lines.isEmpty && shared < 0.8 { emit(["ms": Int(at * 1000), "text": lines.joined(separator: "\n")]); words = seen }
+      if let text = reader.read(image) { emitLine(["ms": Int(at * 1000), "text": text]) }
     }
     at += 2
-    emit(["fraction": min(1, at / seconds)])
+    emitLine(["fraction": min(1, at / seconds)])
   }
   exit(0)
+}
+// A call's window as text while it records (the person chose it on the "Take notes?" card): only the call app's window,
+// never the rest of the screen, taken every 2 s by ScreenCaptureKit and read like screen-text.
+//   yogurt-audio screen-live --app BUNDLE_ID [--title TITLE] [--browser] [--start-ms X] [--frames DIR]
+// The window: the app's largest on-screen window, preferring one whose title matches TITLE (the call's tab or window) or
+// names a call. A browser's window counts only while it shows such a title, so another tab is never read.
+// ms is meeting time: from X on, paused time left out (stdin pause, resume, stop; end of input also stops).
+// stdout: {"ms","text","frame"?} per change (frame: DIR/<ms>.jpg, the picture read, when DIR is given), or {"access":false}
+// once when Screen Recording is off: the Mac's own prompt is shown the first time, and nothing is read until it is on.
+if args.count >= 2, args[1] == "screen-live" {
+  guard let app = argValue("--app") else { fail("screen-live needs --app BUNDLE_ID") }
+  let hint = (argValue("--title") ?? "").lowercased(), browser = args.contains("--browser")
+  let frames = argValue("--frames").map { URL(fileURLWithPath: $0, isDirectory: true) }
+  guard CGPreflightScreenCaptureAccess() else { _ = CGRequestScreenCaptureAccess(); emitLine(["access": false]); exit(0) }
+  if let frames { try? FileManager.default.createDirectory(at: frames, withIntermediateDirectories: true) }
+  let clock = NSLock()
+  var base = Double(argValue("--start-ms") ?? "") ?? 0, since: Date? = Date()
+  func meetingMs() -> Int { clock.lock(); defer { clock.unlock() }; return Int(base + (since.map { Date().timeIntervalSince($0) * 1000 } ?? 0)) }
+  Thread.detachNewThread {
+    while let line = readLine() {
+      clock.lock()
+      if line == "pause", let s = since { base += Date().timeIntervalSince(s) * 1000; since = nil }
+      else if line == "resume", since == nil { since = Date() }
+      clock.unlock()
+      if line == "stop" { exit(0) }
+    }
+    exit(0)
+  }
+  let call = try! NSRegularExpression(pattern: #"\b(meet|teams|zoom|webex|call)\b"#, options: .caseInsensitive)
+  func callWindow() -> SCWindow? {
+    let done = DispatchSemaphore(value: 0)
+    var content: SCShareableContent?
+    SCShareableContent.getExcludingDesktopWindows(true, onScreenWindowsOnly: true) { c, _ in content = c; done.signal() }
+    guard done.wait(timeout: .now() + 5) == .success, let windows = content?.windows else { return nil }
+    let mine = windows.filter { $0.owningApplication?.bundleIdentifier == app && $0.windowLayer == 0 && $0.frame.width >= 200 && $0.frame.height >= 150 }
+    let titled = mine.filter { w in
+      let title = (w.title ?? "").lowercased()
+      return !title.isEmpty && ((!hint.isEmpty && (title.contains(hint) || hint.contains(title))) || call.firstMatch(in: title, range: NSRange(title.startIndex..., in: title)) != nil)
+    }
+    return (browser || !titled.isEmpty ? titled : mine).max { $0.frame.width * $0.frame.height < $1.frame.width * $1.frame.height }
+  }
+  func picture(of w: SCWindow) -> CGImage? {
+    let config = SCStreamConfiguration()
+    // the window at Retina size, at most 2560 on its long side (as an uploaded video is read)
+    let scale = min(2, 2560 / max(w.frame.width, w.frame.height))
+    config.width = Int(w.frame.width * scale); config.height = Int(w.frame.height * scale)
+    config.showsCursor = false
+    let done = DispatchSemaphore(value: 0)
+    var image: CGImage?
+    SCScreenshotManager.captureImage(contentFilter: SCContentFilter(desktopIndependentWindow: w), configuration: config) { i, _ in image = i; done.signal() }
+    return done.wait(timeout: .now() + 5) == .success ? image : nil
+  }
+  func save(_ image: CGImage, as url: URL) -> Bool {
+    // written beside it first, so a stop mid-write leaves no broken picture
+    let part = url.appendingPathExtension("part")
+    guard let out = CGImageDestinationCreateWithURL(part as CFURL, "public.jpeg" as CFString, 1, nil) else { return false }
+    CGImageDestinationAddImage(out, image, [kCGImageDestinationLossyCompressionQuality: 0.7] as CFDictionary)
+    return CGImageDestinationFinalize(out) && (try? FileManager.default.moveItem(at: part, to: url)) != nil
+  }
+  let reader = ScreenReader()
+  while true {
+    let started = Date()
+    clock.lock(); let paused = since == nil; clock.unlock()
+    if !paused {
+      autoreleasepool {
+        guard let w = callWindow(), let image = picture(of: w), let text = reader.read(image) else { return }
+        let ms = meetingMs()
+        var line: [String: Any] = ["ms": ms, "text": text]
+        if let frames, save(image, as: frames.appendingPathComponent("\(ms).jpg")) { line["frame"] = "\(ms).jpg" }
+        emitLine(line)
+      }
+    }
+    Thread.sleep(forTimeInterval: max(0, 2 - Date().timeIntervalSince(started)))
+  }
 }
 if args.count >= 4, args[1] == "speech-file" {
   #if compiler(>=6.2)

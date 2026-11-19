@@ -8,7 +8,7 @@ import { floatingType, floatOverFullScreen } from './float'
 import { activeMeeting, onMeetingStop } from './meeting'
 
 const BACKGROUND = process.env.YOGURT_BACKGROUND === '1'
-const ACTIONS: readonly string[] = ['take-notes', 'close', 'stop', 'keep-going'] satisfies PromptAction[]
+const ACTIONS: readonly string[] = ['take-notes', 'take-notes-screen', 'close', 'stop', 'keep-going'] satisfies PromptAction[]
 
 /** the card at the top right: small, frameless, on top of everything, appears without taking focus from what the person is doing */
 function createCard(kind: PromptView['kind'], os = 'darwin'): BrowserWindow {
@@ -42,7 +42,10 @@ function createCard(kind: PromptView['kind'], os = 'darwin'): BrowserWindow {
 export function createPrompts(d: {
   /** is a Yogurt window on screen? If not, a system notification says it too */
   windowVisible(): boolean
-  takeNotes(p: Prompt): void
+  /** screen: the person chose to read the call's window too */
+  takeNotes(p: Prompt, screen: boolean): void
+  /** can the card offer to read this call's window? (a Mac) */
+  screen?(p: Prompt): boolean
   stop(meetingId: string): void
   dismissed(key: string): void
   keepGoing(): void
@@ -73,7 +76,7 @@ export function createPrompts(d: {
     close()
     if (!v) return
     if (v.kind === 'start') {
-      if (action === 'take-notes' && p) d.takeNotes(p)
+      if ((action === 'take-notes' || action === 'take-notes-screen') && p) d.takeNotes(p, action === 'take-notes-screen' && !!v.screen)
       else d.dismissed(v.key)
     } else if (activeMeeting()?.id === v.meetingId) {
       if (action === 'stop') d.stop(v.meetingId)
@@ -110,7 +113,7 @@ export function createPrompts(d: {
   ipcMain.handle('prompt:act', (_e, action: unknown) => { if (ACTIONS.includes(action as PromptAction)) act(action as PromptAction) })
 
   return {
-    offer(p: Prompt) { prompt = p; show({ kind: 'start', key: p.key, app: p.app, title: p.title }) },
+    offer(p: Prompt) { prompt = p; show({ kind: 'start', key: p.key, app: p.app, title: p.title, ...(p.screen && d.screen?.(p) ? { screen: true } : {}) }) },
     askStop(m: Meeting) { prompt = null; show({ kind: 'stop', meetingId: m.id, title: m.title }) },
     hide: close,
     /** the recording stopped by itself because the call ended: no card, a notification while Yogurt is away; clicking it opens the note to resume */
