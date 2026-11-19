@@ -822,5 +822,14 @@
     "few": "{count} schůzky už splňují podmínku. Jejich videa se teď smažou.",
     "many": "{count} schůzky už splňuje podmínku. Jejich videa se teď smažou.",
     "other": "{count} schůzek už splňuje podmínku. Jejich videa se teď smažou."
-  }
+  },
+  "Keep audio recordings after meetings": "Ponechat zvukové nahrávky po schůzkách",
+  "When off, new meetings' audio is deleted once the summary is saved.": "Při vypnutí se zvuk nových schůzek smaže po uložení shrnutí.",
+  "Edit or regenerate summary": "Upravit nebo vytvořit souhrn znovu",
+  "Edit summary": "Upravit souhrn",
+  "Edit using the transcript too": "Při úpravě použít i přepis",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Pomalejší a závisí na modelu pro poznámky: dlouhá schůzka se do něj nemusí vejít a pak se čte po částech.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "„Vygenerovat znovu“ nahradí vaše úpravy souhrnu. „Upravit“ je zachová.",
+  "Summary edited": "Souhrn upraven",
+  "The summary changed since, so it wasn't undone.": "Souhrn se mezitím změnil, takže úprava nebyla odvolána."
 }

@@ -771,5 +771,14 @@
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} toplantı zaten kapsama giriyor. Videosu şimdi silinir.",
     "other": "{count} toplantı zaten kapsama giriyor. Videoları şimdi silinir."
-  }
+  },
+  "Keep audio recordings after meetings": "Toplantılardan sonra ses kayıtlarını sakla",
+  "When off, new meetings' audio is deleted once the summary is saved.": "Kapalıyken yeni toplantıların sesi özet kaydedilince silinir.",
+  "Edit or regenerate summary": "Özeti düzenle veya yeniden oluştur",
+  "Edit summary": "Özeti düzenle",
+  "Edit using the transcript too": "Transkripti de kullanarak düzenle",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Daha yavaştır ve not modeline bağlıdır: uzun bir toplantı modele sığmayabilir, bu durumda parça parça okunur.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "“Yeniden oluştur” özette yaptığınız düzenlemeleri değiştirir. “Düzenle” onları korur.",
+  "Summary edited": "Özet düzenlendi",
+  "The summary changed since, so it wasn't undone.": "Özet o zamandan beri değişti, bu yüzden düzenleme geri alınmadı."
 }

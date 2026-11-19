@@ -729,5 +729,14 @@
   "Delete video": "Hapus video",
   "Don't keep it": "Jangan simpan",
   "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Video yang diunggah disimpan agar layarnya bisa dibaca lagi. Tanpa video itu, layar tidak bisa dibaca nanti, misalnya dengan model lain.",
-  "{count} meetings already qualify. Their videos are deleted now.": "{count} rapat sudah memenuhi aturan. Videonya dihapus sekarang."
+  "{count} meetings already qualify. Their videos are deleted now.": "{count} rapat sudah memenuhi aturan. Videonya dihapus sekarang.",
+  "Keep audio recordings after meetings": "Simpan rekaman audio setelah rapat",
+  "When off, new meetings' audio is deleted once the summary is saved.": "Jika dimatikan, audio rapat baru dihapus setelah ringkasan tersimpan.",
+  "Edit or regenerate summary": "Sunting atau buat ulang ringkasan",
+  "Edit summary": "Sunting ringkasan",
+  "Edit using the transcript too": "Gunakan juga transkrip saat menyunting",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Lebih lambat dan bergantung pada model catatan: rapat panjang mungkin tidak muat, jadi dibaca per bagian.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "“Buat ulang” mengganti suntingan Anda pada ringkasan. “Sunting” mempertahankannya.",
+  "Summary edited": "Ringkasan disunting",
+  "The summary changed since, so it wasn't undone.": "Ringkasan sudah berubah sejak itu, jadi suntingan tidak diurungkan."
 }

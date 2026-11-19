@@ -783,5 +783,14 @@
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} meeting valt er al onder. De video wordt nu verwijderd.",
     "other": "{count} meetings vallen er al onder. Hun video’s worden nu verwijderd."
-  }
+  },
+  "Keep audio recordings after meetings": "Audio-opnamen na vergaderingen bewaren",
+  "When off, new meetings' audio is deleted once the summary is saved.": "Indien uit, wordt audio van nieuwe vergaderingen gewist zodra de samenvatting is opgeslagen.",
+  "Edit or regenerate summary": "Samenvatting bewerken of opnieuw maken",
+  "Edit summary": "Samenvatting bewerken",
+  "Edit using the transcript too": "Ook het transcript gebruiken bij bewerken",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Trager en afhankelijk van het notitiemodel: een lange meeting past er misschien niet in en wordt dan in delen gelezen.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "‘Opnieuw maken’ vervangt je wijzigingen in de samenvatting. ‘Bewerken’ behoudt ze.",
+  "Summary edited": "Samenvatting bewerkt",
+  "The summary changed since, so it wasn't undone.": "De samenvatting is sindsdien gewijzigd, dus de bewerking is niet ongedaan gemaakt."
 }

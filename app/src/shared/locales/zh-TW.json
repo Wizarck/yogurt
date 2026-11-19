@@ -729,5 +729,14 @@
   "Delete video": "刪除影片",
   "Don't keep it": "不保留",
   "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "上傳的影片會被保留，以便再次讀取其螢幕內容。沒有影片，之後就無法再讀取螢幕，例如使用其他模型時。",
-  "{count} meetings already qualify. Their videos are deleted now.": "已有 {count} 場會議符合條件。其影片將立即刪除。"
+  "{count} meetings already qualify. Their videos are deleted now.": "已有 {count} 場會議符合條件。其影片將立即刪除。",
+  "Keep audio recordings after meetings": "會後保留錄音",
+  "When off, new meetings' audio is deleted once the summary is saved.": "關閉後，新會議的音訊將在摘要儲存後刪除。",
+  "Edit or regenerate summary": "編輯或重新產生摘要",
+  "Edit summary": "編輯摘要",
+  "Edit using the transcript too": "編輯時也參考逐字稿",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "速度較慢，且取決於筆記模型：長會議可能超出模型容量，此時會分段讀取。",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "「重新產生」會取代你對摘要的修改。「編輯」會保留這些修改。",
+  "Summary edited": "摘要已編輯",
+  "The summary changed since, so it wasn't undone.": "此後摘要又有變更，因此未還原。"
 }

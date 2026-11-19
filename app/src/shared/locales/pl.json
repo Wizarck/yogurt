@@ -827,5 +827,14 @@
     "few": "{count} spotkania już spełniają warunek. Ich wideo zostaną teraz usunięte.",
     "many": "{count} spotkań już spełnia warunek. Ich wideo zostaną teraz usunięte.",
     "other": "{count} spotkania już spełnia warunek. Ich wideo zostaną teraz usunięte."
-  }
+  },
+  "Keep audio recordings after meetings": "Zachowuj nagrania dźwiękowe po spotkaniach",
+  "When off, new meetings' audio is deleted once the summary is saved.": "Po wyłączeniu dźwięk nowych spotkań znika po zapisaniu podsumowania.",
+  "Edit or regenerate summary": "Edytuj lub utwórz podsumowanie od nowa",
+  "Edit summary": "Edytuj podsumowanie",
+  "Edit using the transcript too": "Edytuj, korzystając też z transkrypcji",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Trwa dłużej i zależy od modelu notatek: długie spotkanie może się w nim nie zmieścić i wtedy jest czytane w częściach.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "„Generuj ponownie” zastępuje Twoje zmiany w podsumowaniu. „Edytuj” je zachowuje.",
+  "Summary edited": "Podsumowanie edytowane",
+  "The summary changed since, so it wasn't undone.": "Podsumowanie zmieniło się od tego czasu, więc edycji nie cofnięto."
 }

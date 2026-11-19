@@ -729,5 +729,14 @@
   "Delete video": "ビデオを削除",
   "Don't keep it": "残さない",
   "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "アップロードしたビデオは、画面をもう一度読み取れるように残ります。ビデオがないと、別のモデルを使うなどして後から画面を読み取ることはできません。",
-  "{count} meetings already qualify. Their videos are deleted now.": "{count}件のミーティングがすでに対象です。ビデオを今すぐ削除します。"
+  "{count} meetings already qualify. Their videos are deleted now.": "{count}件のミーティングがすでに対象です。ビデオを今すぐ削除します。",
+  "Keep audio recordings after meetings": "会議後も録音を保存",
+  "When off, new meetings' audio is deleted once the summary is saved.": "オフにすると、新しい会議の音声は要約の保存後に削除されます。",
+  "Edit or regenerate summary": "要約を編集または作り直す",
+  "Edit summary": "要約を編集",
+  "Edit using the transcript too": "文字起こしも使って編集",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "時間がかかり、ノート用モデルに左右されます。長いミーティングは収まらない場合があり、その際は分割して読み込みます。",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "「再生成」は要約に加えた編集を置き換えます。「編集」は残します。",
+  "Summary edited": "要約を編集しました",
+  "The summary changed since, so it wasn't undone.": "その後に要約が変更されたため、取り消せませんでした。"
 }

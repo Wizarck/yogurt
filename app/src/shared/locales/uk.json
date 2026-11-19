@@ -819,5 +819,14 @@
     "few": "{count} зустрічі вже підпадають під правило. Їхні відео буде видалено зараз.",
     "many": "{count} зустрічей уже підпадають під правило. Їхні відео буде видалено зараз.",
     "other": "{count} зустрічі вже підпадають під правило. Їхні відео буде видалено зараз."
-  }
+  },
+  "Keep audio recordings after meetings": "Зберігати аудіозаписи після зустрічей",
+  "When off, new meetings' audio is deleted once the summary is saved.": "Якщо вимкнено, аудіо нових зустрічей видаляється після збереження підсумку.",
+  "Edit or regenerate summary": "Змінити або створити підсумок заново",
+  "Edit summary": "Змінити підсумок",
+  "Edit using the transcript too": "Змінити з урахуванням розшифровки",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Повільніше й залежить від моделі для нотаток: довга зустріч може в неї не вміститися, і тоді її буде прочитано частинами.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "«Створити знову» замінить ваші зміни в підсумку. «Змінити» їх збереже.",
+  "Summary edited": "Підсумок змінено",
+  "The summary changed since, so it wasn't undone.": "Підсумок відтоді змінився, тож зміну не відмінено."
 }

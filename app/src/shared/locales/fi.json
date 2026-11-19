@@ -789,5 +789,14 @@
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} kokous täyttää jo ehdon. Sen video poistetaan nyt.",
     "other": "{count} kokousta täyttää jo ehdon. Niiden videot poistetaan nyt."
-  }
+  },
+  "Keep audio recordings after meetings": "Säilytä äänitallenteet kokousten jälkeen",
+  "When off, new meetings' audio is deleted once the summary is saved.": "Pois päältä uusien kokousten ääni poistetaan yhteenvedon tallennuttua.",
+  "Edit or regenerate summary": "Muokkaa tai luo yhteenveto uudelleen",
+  "Edit summary": "Muokkaa yhteenvetoa",
+  "Edit using the transcript too": "Käytä muokatessa myös litterointia",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Hitaampi ja riippuu muistiinpanomallista: pitkä kokous ei ehkä mahdu siihen, jolloin se luetaan osissa.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "”Luo uudelleen” korvaa yhteenvetoon tekemäsi muutokset. ”Muokkaa” säilyttää ne.",
+  "Summary edited": "Yhteenveto muokattu",
+  "The summary changed since, so it wasn't undone.": "Yhteenvetoa on muutettu sen jälkeen, joten muokkausta ei kumottu."
 }
