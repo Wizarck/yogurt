@@ -776,5 +776,6 @@
   "Also read the call's screen": "通話の画面も読み取る",
   "Record with screen": "画面付きで録音",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurtは通話の画面を読み取れません。システム設定で画面収録を許可してください。",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "アップロードしたビデオと、通話の画面から読み取った画像は、もう一度読み取れるように残ります。これらがないと、別のモデルを使うなどして後から画面を読み取ることはできません。"
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "アップロードしたビデオと、通話の画面から読み取った画像は、もう一度読み取れるように残ります。これらがないと、別のモデルを使うなどして後から画面を読み取ることはできません。",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Yogurtに画面収録を許可し、求められたら開き直してください。"
 }

@@ -26,6 +26,7 @@ const api: YogurtApi = {
   prompt: {
     state: () => ipcRenderer.invoke('prompt:state'),
     act: (a: PromptAction) => { void ipcRenderer.invoke('prompt:act', a) },
+    screen: (on: boolean) => ipcRenderer.invoke('prompt:screen', on),
   },
   widget: {
     state: () => ipcRenderer.invoke('widget:state'),

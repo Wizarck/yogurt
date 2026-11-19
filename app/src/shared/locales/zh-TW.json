@@ -776,5 +776,6 @@
   "Also read the call's screen": "同時讀取通話螢幕",
   "Record with screen": "錄音並讀取螢幕",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt 無法讀取通話螢幕。請在系統設定中允許螢幕錄製。",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "上傳的影片以及從通話螢幕讀取的圖片會被保留，以便再次讀取。沒有它們，之後就無法再讀取螢幕，例如使用其他模型時。"
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "上傳的影片以及從通話螢幕讀取的圖片會被保留，以便再次讀取。沒有它們，之後就無法再讀取螢幕，例如使用其他模型時。",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "允許 Yogurt 錄製螢幕，然後在提示時重新開啟它。"
 }

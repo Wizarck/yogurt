@@ -776,5 +776,6 @@
   "Also read the call's screen": "Đọc cả màn hình cuộc gọi",
   "Record with screen": "Ghi kèm màn hình",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt không đọc được màn hình cuộc gọi. Hãy cho phép ghi màn hình trong Cài đặt hệ thống.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Video đã tải lên và các hình ảnh đọc từ màn hình cuộc gọi được giữ lại để có thể đọc lại. Nếu không có chúng, sẽ không thể đọc màn hình sau này, chẳng hạn bằng một mô hình khác."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Video đã tải lên và các hình ảnh đọc từ màn hình cuộc gọi được giữ lại để có thể đọc lại. Nếu không có chúng, sẽ không thể đọc màn hình sau này, chẳng hạn bằng một mô hình khác.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Cho phép Yogurt ghi màn hình, rồi mở lại khi được yêu cầu."
 }

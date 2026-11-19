@@ -844,5 +844,6 @@
   "Also read the call's screen": "לקרוא גם את מסך השיחה",
   "Record with screen": "הקלטה עם מסך",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt לא יכול לקרוא את מסך השיחה. יש לאפשר הקלטת מסך בהגדרות המערכת.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "וידאו שהועלה והתמונות שנקראו ממסך של שיחה נשמרים כדי שאפשר יהיה לקרוא אותם שוב. בלעדיהם אי אפשר לקרוא את המסך מאוחר יותר, למשל באמצעות מודל אחר."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "וידאו שהועלה והתמונות שנקראו ממסך של שיחה נשמרים כדי שאפשר יהיה לקרוא אותם שוב. בלעדיהם אי אפשר לקרוא את המסך מאוחר יותר, למשל באמצעות מודל אחר.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "אפשרו ל-Yogurt הקלטת מסך, ואז פתחו אותו מחדש כשתתבקשו."
 }

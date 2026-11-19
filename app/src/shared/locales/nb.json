@@ -830,5 +830,6 @@
   "Also read the call's screen": "Les også samtalens skjerm",
   "Record with screen": "Ta opp med skjerm",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt kan ikke lese samtalens skjerm. Tillat skjermopptak i Systeminnstillinger.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "En opplastet video og bildene lest fra en samtales skjerm beholdes slik at de kan leses på nytt. Uten dem kan skjermen ikke leses senere, for eksempel med en annen modell."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "En opplastet video og bildene lest fra en samtales skjerm beholdes slik at de kan leses på nytt. Uten dem kan skjermen ikke leses senere, for eksempel med en annen modell.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Tillat skjermopptak for Yogurt, og åpne den igjen når du blir bedt om det."
 }

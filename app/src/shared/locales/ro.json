@@ -851,5 +851,6 @@
   "Also read the call's screen": "Citiți și ecranul apelului",
   "Record with screen": "Înregistrați cu ecranul",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt nu poate citi ecranul apelului. Permiteți înregistrarea ecranului în Configurări sistem.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Un videoclip încărcat și imaginile citite de pe ecranul unui apel se păstrează ca să poată fi citite din nou. Fără ele, ecranul nu mai poate fi citit ulterior, de exemplu cu alt model."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Un videoclip încărcat și imaginile citite de pe ecranul unui apel se păstrează ca să poată fi citite din nou. Fără ele, ecranul nu mai poate fi citit ulterior, de exemplu cu alt model.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Permite înregistrarea ecranului pentru Yogurt, apoi redeschide-l când ți se cere."
 }

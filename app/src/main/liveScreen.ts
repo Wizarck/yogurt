@@ -50,7 +50,8 @@ export function hookLiveScreen(d: {
   start: (args: string[]) => ScreenProc
 }) {
   type Session = { id: string; target: ScreenTarget; proc: ScreenProc | null; paused: boolean; over: boolean }
-  let pending: ScreenTarget | null = null
+  /** id and until: the card's call already had a note, which resumes from the note a moment later */
+  let pending: { target: ScreenTarget; id?: string; until?: number } | null = null
   let session: Session | null = null
 
   const send = (p: ScreenProc, cmd: string) => {
@@ -79,8 +80,9 @@ export function hookLiveScreen(d: {
   }
 
   d.onStart((m) => {
-    const target = pending
+    const p = pending
     pending = null
+    const target = p && (!p.id || (p.id === m.id && Date.now() < (p.until ?? 0))) ? p.target : null
     if (!target || session) return
     const s: Session = { id: m.id, target, proc: null, paused: false, over: false }
     session = s
@@ -89,7 +91,8 @@ export function hookLiveScreen(d: {
       hiccup: () => {},
       giveUp: () => { s.over = true; console.error('reading the call screen stopped after repeated crashes', s.id) },
     })
-    run(s, 0, policy)
+    // a resumed note carries on after its earlier part
+    run(s, d.meetingMs(), policy)
   })
   d.onPaused((id, paused) => {
     if (session?.id !== id || session.paused === paused) return
@@ -110,8 +113,9 @@ export function hookLiveScreen(d: {
   })
 
   return {
-    /** the next meeting to start reads this call's window (null: none); set just before it starts */
-    next(t: ScreenTarget | null) { pending = t },
+    /** the next meeting to start reads this call's window (null: none); set just before it starts. resuming: only that
+     *  meeting, within a minute (its note resumes it) */
+    next(t: ScreenTarget | null, resuming?: string) { pending = t && { target: t, ...(resuming ? { id: resuming, until: Date.now() + 60_000 } : {}) } },
     /** for tests: the meeting whose call screen is being read */
     reading: (): string | null => (session && !session.over ? session.id : null),
   }
