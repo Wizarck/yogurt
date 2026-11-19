@@ -426,7 +426,7 @@ export type WidgetView = {
   /** time recorded as of `at` (main's clock); the page counts on from there while recording */
   elapsedMs: number
   at: number
-  note: { tone: 'hint' | 'hiccup'; text: string; /** which warning a hint is for */ code?: 'no-mic' | 'no-system-audio'; missingAudio?: ('mic' | 'systemAudio')[] } | null
+  note: { tone: 'hint' | 'hiccup'; text: string; /** which warning a hint is for */ code?: 'no-mic' | 'no-system-audio' | 'no-screen-access'; missingAudio?: ('mic' | 'systemAudio')[] } | null
   /** the recording stopped because the audio helper kept failing */
   crashed: boolean
   /** the recording stopped by itself because the call ended */

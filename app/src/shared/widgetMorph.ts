@@ -79,7 +79,8 @@ export function widgetContains(rect: WidgetSurface, x: number, y: number): boole
   return dx * dx + dy * dy <= radius * radius
 }
 
-export const widgetSettings = (note: WidgetView['note']) => note?.code === 'no-mic' ? 'mic' : note?.code === 'no-system-audio' ? 'systemAudio' : null
+// screen recording shares call audio's pane (Screen & System Audio Recording)
+export const widgetSettings = (note: WidgetView['note']) => note?.code === 'no-mic' ? 'mic' : note?.code === 'no-system-audio' || note?.code === 'no-screen-access' ? 'systemAudio' : null
 
 /** Hover deadlines stop during a press and wait for quiet after a drag. */
 export class WidgetIntent {

@@ -71,7 +71,7 @@ export class WidgetModel {
       else if (this.textHint === 'transcribe-failed') note = { tone: 'hint', text: t("Some of this meeting couldn't be transcribed.") }
       else if (this.textHint === 'no-speech-model') note = { tone: 'hint', text: t("The speech model isn't ready yet, so only audio is being saved.") }
       else if (this.textHint === 'falling-behind') note = { tone: 'hint', text: t('Yogurt is falling behind. Some lines may be missing.') }
-      else if (this.textHint === 'no-screen-access') note = { tone: 'hint', text: t("Yogurt can't read the call's screen. Allow screen recording in System Settings.") }
+      else if (this.textHint === 'no-screen-access') note = { tone: 'hint', code: 'no-screen-access', text: t("Yogurt can't read the call's screen. Allow screen recording in System Settings.") }
     }
     else if (this.savePending) note = { tone: 'hint', text: t('Recording stopped. Open Yogurt to finish saving.') }
     return {
