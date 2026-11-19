@@ -83,7 +83,8 @@ test("Start recording alone reads no screen; with Screen Recording off the note 
     await expect(page.getByTestId('note-state')).toHaveAttribute('data-state', 'recording')
     const id = await meetingId(app)
     expect(id).not.toBe(plain)
-    await expect(page.getByTestId('rec-hint')).toHaveText("Yogurt can't read the call's screen. Allow screen recording in System Settings.")
+    await expect(page.getByTestId('rec-hint')).toContainText("Yogurt can't read the call's screen. Allow screen recording in System Settings.")
+    await expect(page.getByTestId('rec-hint-fix')).toHaveAttribute('data-kind', 'screen')
     await expect(page.getByTestId('note-state')).toHaveAttribute('data-state', 'recording')
     expect(await screenLines(page, id)).toEqual([])
   } finally { await app.close() }
