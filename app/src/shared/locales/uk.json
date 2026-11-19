@@ -773,7 +773,6 @@
   "App name": "Назва програми",
   "Add an app": "Додати програму",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Вставте це налаштування в {name}. У ньому ключ програми, тож нікому його не показуйте.",
-  "Open": "Відкрити",
   "What Yogurt keeps": "Що зберігає Yogurt",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Відлік іде від завершення кожної зустрічі. Аудіо й розшифровки видаляються лише після збереження підсумку, а нотатки залишаються.",
   "Delete transcripts": "Видалити розшифровки",
@@ -820,8 +819,6 @@
     "many": "{count} зустрічей уже підпадають під правило. Їхні відео буде видалено зараз.",
     "other": "{count} зустрічі вже підпадають під правило. Їхні відео буде видалено зараз."
   },
-  "Keep audio recordings after meetings": "Зберігати аудіозаписи після зустрічей",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Якщо вимкнено, аудіо нових зустрічей видаляється після збереження підсумку.",
   "Edit or regenerate summary": "Змінити або створити підсумок заново",
   "Edit summary": "Змінити підсумок",
   "Edit using the transcript too": "Змінити з урахуванням розшифровки",

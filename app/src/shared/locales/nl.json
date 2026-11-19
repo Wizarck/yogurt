@@ -745,7 +745,6 @@
   "App name": "Naam van app",
   "Add an app": "App toevoegen",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Plak deze instelling in {name}. Ze bevat de sleutel van de app, dus houd haar privé.",
-  "Open": "Openen",
   "What Yogurt keeps": "Wat Yogurt bewaart",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Gerekend vanaf het einde van elke meeting. Audio en transcripten verdwijnen pas als de samenvatting is opgeslagen, en notities blijven.",
   "Delete transcripts": "Transcripten verwijderen",
@@ -784,8 +783,6 @@
     "one": "{count} meeting valt er al onder. De video wordt nu verwijderd.",
     "other": "{count} meetings vallen er al onder. Hun video’s worden nu verwijderd."
   },
-  "Keep audio recordings after meetings": "Audio-opnamen na vergaderingen bewaren",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Indien uit, wordt audio van nieuwe vergaderingen gewist zodra de samenvatting is opgeslagen.",
   "Edit or regenerate summary": "Samenvatting bewerken of opnieuw maken",
   "Edit summary": "Samenvatting bewerken",
   "Edit using the transcript too": "Ook het transcript gebruiken bij bewerken",

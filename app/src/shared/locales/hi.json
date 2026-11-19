@@ -733,7 +733,6 @@
   "App name": "ऐप का नाम",
   "Add an app": "ऐप जोड़ें",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "इस सेटअप को {name} में पेस्ट करें। इसमें ऐप की कुंजी है, इसलिए इसे निजी रखें।",
-  "Open": "खोलें",
   "What Yogurt keeps": "Yogurt क्या रखता है",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "हर मीटिंग खत्म होने के समय से गिना जाता है। ऑडियो और ट्रांसक्रिप्ट सारांश सेव होने के बाद ही मिटते हैं, और नोट्स रहते हैं।",
   "Delete transcripts": "ट्रांसक्रिप्ट मिटाएँ",
@@ -772,8 +771,6 @@
     "one": "{count} मीटिंग पहले से इस नियम में आती है। उसका वीडियो अभी मिटाया जाएगा।",
     "other": "{count} मीटिंग्स पहले से इस नियम में आती हैं। उनके वीडियो अभी मिटाए जाएँगे।"
   },
-  "Keep audio recordings after meetings": "मीटिंग के बाद ऑडियो रिकॉर्डिंग रखें",
-  "When off, new meetings' audio is deleted once the summary is saved.": "बंद होने पर नई मीटिंग का ऑडियो सारांश सेव होने के बाद मिटेगा।",
   "Edit or regenerate summary": "सारांश संपादित करें या फिर से बनाएँ",
   "Edit summary": "सारांश संपादित करें",
   "Edit using the transcript too": "ट्रांसक्रिप्ट का भी इस्तेमाल करके संपादित करें",

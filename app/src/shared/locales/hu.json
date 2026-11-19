@@ -733,7 +733,6 @@
   "App name": "App neve",
   "Add an app": "App hozzáadása",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Illeszd be ezt a beállítást ide: {name}. Az app kulcsát tartalmazza, ezért ne oszd meg.",
-  "Open": "Megnyitás",
   "What Yogurt keeps": "Mit őriz meg a Yogurt",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Az egyes megbeszélések végétől számítva. A hang és az átiratok csak az összefoglaló mentése után törlődnek, a jegyzetek megmaradnak.",
   "Delete transcripts": "Átiratok törlése",
@@ -772,8 +771,6 @@
     "one": "{count} megbeszélés már érintett. A videója most törlődik.",
     "other": "{count} megbeszélés már érintett. A videóik most törlődnek."
   },
-  "Keep audio recordings after meetings": "Hangfelvételek megőrzése a megbeszélések után",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Kikapcsolva az új megbeszélések hangja az összefoglaló mentése után törlődik.",
   "Edit or regenerate summary": "Összefoglaló szerkesztése vagy újrakészítése",
   "Edit summary": "Összefoglaló szerkesztése",
   "Edit using the transcript too": "Szerkesztés az átirat alapján is",

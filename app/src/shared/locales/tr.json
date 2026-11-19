@@ -733,7 +733,6 @@
   "App name": "Uygulama adı",
   "Add an app": "Uygulama ekle",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Bu kurulumu {name} uygulamasına yapıştırın. Uygulamanın anahtarını içerir, bu yüzden kimseyle paylaşmayın.",
-  "Open": "Aç",
   "What Yogurt keeps": "Yogurt’un sakladıkları",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Her toplantının bittiği andan itibaren sayılır. Ses ve transkriptler yalnızca özet kaydedildikten sonra silinir, notlar kalır.",
   "Delete transcripts": "Transkriptleri sil",
@@ -772,8 +771,6 @@
     "one": "{count} toplantı zaten kapsama giriyor. Videosu şimdi silinir.",
     "other": "{count} toplantı zaten kapsama giriyor. Videoları şimdi silinir."
   },
-  "Keep audio recordings after meetings": "Toplantılardan sonra ses kayıtlarını sakla",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Kapalıyken yeni toplantıların sesi özet kaydedilince silinir.",
   "Edit or regenerate summary": "Özeti düzenle veya yeniden oluştur",
   "Edit summary": "Özeti düzenle",
   "Edit using the transcript too": "Transkripti de kullanarak düzenle",

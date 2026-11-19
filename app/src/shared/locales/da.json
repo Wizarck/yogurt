@@ -745,7 +745,6 @@
   "App name": "Appnavn",
   "Add an app": "Tilføj en app",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Indsæt denne opsætning i {name}. Den indeholder appens nøgle, så hold den privat.",
-  "Open": "Åbn",
   "What Yogurt keeps": "Hvad Yogurt beholder",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Regnes fra hvert mødes afslutning. Lyd og transskriptioner slettes først, når resuméet er gemt, og noter bevares.",
   "Delete transcripts": "Slet transskriptioner",
@@ -784,8 +783,6 @@
     "one": "{count} møde er allerede omfattet. Videoen slettes nu.",
     "other": "{count} møder er allerede omfattet. Deres videoer slettes nu."
   },
-  "Keep audio recordings after meetings": "Behold lydoptagelser efter møder",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Når slået fra, slettes nye møders lyd, når resuméet er gemt.",
   "Edit or regenerate summary": "Rediger eller lav resumé igen",
   "Edit summary": "Rediger resumé",
   "Edit using the transcript too": "Brug også transskriptionen ved redigering",

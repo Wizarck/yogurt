@@ -773,7 +773,6 @@
   "App name": "Название приложения",
   "Add an app": "Добавить приложение",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Вставьте эту настройку в {name}. В ней ключ приложения, поэтому никому её не показывайте.",
-  "Open": "Открыть",
   "What Yogurt keeps": "Что хранит Yogurt",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Отсчёт идёт от окончания каждой встречи. Аудио и расшифровки удаляются только после сохранения сводки, а заметки остаются.",
   "Delete transcripts": "Удалить расшифровки",
@@ -820,8 +819,6 @@
     "many": "{count} встреч уже попадают под правило. Их видео будут удалены сейчас.",
     "other": "{count} встречи уже попадают под правило. Их видео будут удалены сейчас."
   },
-  "Keep audio recordings after meetings": "Хранить аудиозаписи после встреч",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Если выключено, аудио новых встреч удаляется после сохранения сводки.",
   "Edit or regenerate summary": "Изменить или пересоздать сводку",
   "Edit summary": "Изменить сводку",
   "Edit using the transcript too": "Изменить с учётом расшифровки",

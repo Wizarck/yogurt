@@ -745,7 +745,6 @@
   "App name": "Pangalan ng app",
   "Add an app": "Magdagdag ng app",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "I-paste ang setup na ito sa {name}. Nasa loob nito ang key ng app, kaya huwag itong ibahagi.",
-  "Open": "Buksan",
   "What Yogurt keeps": "Ano ang itinatago ng Yogurt",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Binibilang mula nang matapos ang bawat meeting. Nabubura lang ang audio at mga transcript kapag na-save na ang buod, at nananatili ang mga tala.",
   "Delete transcripts": "Burahin ang mga transcript",
@@ -784,8 +783,6 @@
     "one": "Pasok na sa patakaran ang {count} meeting. Buburahin na ngayon ang video nito.",
     "other": "Pasok na sa patakaran ang {count} na meeting. Buburahin na ngayon ang mga video ng mga ito."
   },
-  "Keep audio recordings after meetings": "Itago ang mga audio recording pagkatapos ng pulong",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Kapag naka-off, buburahin ang audio ng bagong pulong pag na-save ang buod.",
   "Edit or regenerate summary": "I-edit o gawin ulit ang buod",
   "Edit summary": "I-edit ang buod",
   "Edit using the transcript too": "I-edit gamit din ang transcript",

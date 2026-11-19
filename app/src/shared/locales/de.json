@@ -745,7 +745,6 @@
   "App name": "App-Name",
   "Add an app": "App hinzufügen",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Füge diese Einrichtung in {name} ein. Sie enthält den Schlüssel der App, also behalte sie für dich.",
-  "Open": "Öffnen",
   "What Yogurt keeps": "Was Yogurt behält",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Gerechnet ab dem Ende jedes Meetings. Audio und Transkripte werden erst gelöscht, wenn die Zusammenfassung gespeichert ist; Notizen bleiben.",
   "Delete transcripts": "Transkripte löschen",
@@ -784,8 +783,6 @@
     "one": "1 Meeting ist bereits betroffen. Sein Video wird jetzt gelöscht.",
     "other": "{count} Meetings sind bereits betroffen. Ihre Videos werden jetzt gelöscht."
   },
-  "Keep audio recordings after meetings": "Audioaufnahmen nach Meetings behalten",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Wenn aus, wird Audio neuer Meetings nach Speichern der Zusammenfassung gelöscht.",
   "Edit or regenerate summary": "Zusammenfassung bearbeiten oder neu erstellen",
   "Edit summary": "Zusammenfassung bearbeiten",
   "Edit using the transcript too": "Beim Bearbeiten auch das Transkript nutzen",

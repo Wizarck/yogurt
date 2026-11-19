@@ -761,7 +761,6 @@
   "App name": "Nome do app",
   "Add an app": "Adicionar um app",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Cole esta configuração no {name}. Ela contém a chave do app, então mantenha-a privada.",
-  "Open": "Abrir",
   "What Yogurt keeps": "O que o Yogurt mantém",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Contado a partir do fim de cada reunião. O áudio e as transcrições só são excluídos depois que o resumo é salvo, e as notas ficam.",
   "Delete transcripts": "Excluir transcrições",
@@ -804,8 +803,6 @@
     "many": "{count} reuniões já se encaixam na regra. Os vídeos delas serão excluídos agora.",
     "other": "{count} reuniões já se encaixam na regra. Os vídeos delas serão excluídos agora."
   },
-  "Keep audio recordings after meetings": "Manter gravações de áudio após as reuniões",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Se desativado, o áudio de novas reuniões é excluído após salvar o resumo.",
   "Edit or regenerate summary": "Editar ou gerar resumo de novo",
   "Edit summary": "Editar resumo",
   "Edit using the transcript too": "Editar usando também a transcrição",

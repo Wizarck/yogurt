@@ -762,7 +762,6 @@
   "App name": "Numele aplicației",
   "Add an app": "Adaugă o aplicație",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Lipește această configurare în {name}. Conține cheia aplicației, așa că păstreaz-o privată.",
-  "Open": "Deschide",
   "What Yogurt keeps": "Ce păstrează Yogurt",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Se calculează de la încheierea fiecărei întâlniri. Sunetul și transcrierile se șterg doar după salvarea rezumatului, iar notițele rămân.",
   "Delete transcripts": "Șterge transcrierile",
@@ -805,8 +804,6 @@
     "few": "{count} întâlniri se încadrează deja. Videoclipurile lor se șterg acum.",
     "other": "{count} de întâlniri se încadrează deja. Videoclipurile lor se șterg acum."
   },
-  "Keep audio recordings after meetings": "Păstrează înregistrările audio după întâlniri",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Când e oprit, sunetul întâlnirilor noi se șterge după salvarea rezumatului.",
   "Edit or regenerate summary": "Editați sau regenerați rezumatul",
   "Edit summary": "Editează rezumatul",
   "Edit using the transcript too": "Editează folosind și transcrierea",

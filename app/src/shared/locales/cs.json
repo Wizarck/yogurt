@@ -776,7 +776,6 @@
   "App name": "Název aplikace",
   "Add an app": "Přidat aplikaci",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Vložte toto nastavení do aplikace {name}. Obsahuje klíč aplikace, tak ho nikomu neukazujte.",
-  "Open": "Otevřít",
   "What Yogurt keeps": "Co Yogurt uchovává",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Počítá se od konce každé schůzky. Zvuk a přepisy se smažou až po uložení souhrnu a poznámky zůstanou.",
   "Delete transcripts": "Smazat přepisy",
@@ -823,8 +822,6 @@
     "many": "{count} schůzky už splňuje podmínku. Jejich videa se teď smažou.",
     "other": "{count} schůzek už splňuje podmínku. Jejich videa se teď smažou."
   },
-  "Keep audio recordings after meetings": "Ponechat zvukové nahrávky po schůzkách",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Při vypnutí se zvuk nových schůzek smaže po uložení shrnutí.",
   "Edit or regenerate summary": "Upravit nebo vytvořit souhrn znovu",
   "Edit summary": "Upravit souhrn",
   "Edit using the transcript too": "Při úpravě použít i přepis",

@@ -755,7 +755,6 @@
   "App name": "שם האפליקציה",
   "Add an app": "הוספת אפליקציה",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "יש להדביק את ההגדרה הזו ב-{name}. היא כוללת את המפתח של האפליקציה, לכן אין לשתף אותה.",
-  "Open": "פתיחה",
   "What Yogurt keeps": "מה Yogurt שומר",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "הספירה מתחילה בסיום כל פגישה. השמע והתמלולים נמחקים רק אחרי שהסיכום נשמר, וההערות נשארות.",
   "Delete transcripts": "מחיקת תמלולים",
@@ -798,8 +797,6 @@
     "two": "{count} פגישות כבר עומדות בתנאי. סרטוני הווידאו שלהן נמחקים עכשיו.",
     "other": "{count} פגישות כבר עומדות בתנאי. סרטוני הווידאו שלהן נמחקים עכשיו."
   },
-  "Keep audio recordings after meetings": "שמירת הקלטות שמע אחרי פגישות",
-  "When off, new meetings' audio is deleted once the summary is saved.": "כשכבוי, השמע של פגישות חדשות נמחק לאחר שמירת הסיכום.",
   "Edit or regenerate summary": "עריכה או יצירה מחדש של הסיכום",
   "Edit summary": "עריכת הסיכום",
   "Edit using the transcript too": "עריכה גם על סמך התמלול",

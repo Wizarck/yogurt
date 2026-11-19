@@ -748,7 +748,6 @@
   "App name": "Όνομα εφαρμογής",
   "Add an app": "Προσθήκη εφαρμογής",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Επικολλήστε αυτή τη ρύθμιση στο {name}. Περιέχει το κλειδί της εφαρμογής, οπότε κρατήστε τη ιδιωτική.",
-  "Open": "Άνοιγμα",
   "What Yogurt keeps": "Τι κρατά το Yogurt",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Μετρά από τη λήξη κάθε σύσκεψης. Ο ήχος και οι απομαγνητοφωνήσεις διαγράφονται μόνο αφού αποθηκευτεί η σύνοψη, και οι σημειώσεις μένουν.",
   "Delete transcripts": "Διαγραφή απομαγνητοφωνήσεων",
@@ -787,8 +786,6 @@
     "one": "{count} σύσκεψη πληροί ήδη τον κανόνα. Το βίντεό της διαγράφεται τώρα.",
     "other": "{count} συσκέψεις πληρούν ήδη τον κανόνα. Τα βίντεό τους διαγράφονται τώρα."
   },
-  "Keep audio recordings after meetings": "Διατήρηση ηχογραφήσεων μετά τις συναντήσεις",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Αν κλείσει, ο ήχος νέων συναντήσεων διαγράφεται μόλις σωθεί η σύνοψη.",
   "Edit or regenerate summary": "Επεξεργασία ή νέα δημιουργία σύνοψης",
   "Edit summary": "Επεξεργασία σύνοψης",
   "Edit using the transcript too": "Επεξεργασία και με βάση την απομαγνητοφώνηση",

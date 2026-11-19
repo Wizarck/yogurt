@@ -751,7 +751,6 @@
   "App name": "Apin nimi",
   "Add an app": "Lisää appi",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Liitä nämä asetukset appiin {name}. Ne sisältävät apin avaimen, joten pidä ne omana tietonasi.",
-  "Open": "Avaa",
   "What Yogurt keeps": "Mitä Yogurt säilyttää",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "Lasketaan kunkin kokouksen päättymisestä. Ääni ja litteroinnit poistetaan vasta, kun yhteenveto on tallennettu, ja muistiinpanot säilyvät.",
   "Delete transcripts": "Poista litteroinnit",
@@ -790,8 +789,6 @@
     "one": "{count} kokous täyttää jo ehdon. Sen video poistetaan nyt.",
     "other": "{count} kokousta täyttää jo ehdon. Niiden videot poistetaan nyt."
   },
-  "Keep audio recordings after meetings": "Säilytä äänitallenteet kokousten jälkeen",
-  "When off, new meetings' audio is deleted once the summary is saved.": "Pois päältä uusien kokousten ääni poistetaan yhteenvedon tallennuttua.",
   "Edit or regenerate summary": "Muokkaa tai luo yhteenveto uudelleen",
   "Edit summary": "Muokkaa yhteenvetoa",
   "Edit using the transcript too": "Käytä muokatessa myös litterointia",

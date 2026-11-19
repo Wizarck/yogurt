@@ -801,7 +801,6 @@
   "App name": "اسم التطبيق",
   "Add an app": "إضافة تطبيق",
   "Paste this setup into {name}. It holds the app’s key, so keep it private.": "الصق هذا الإعداد في {name}. يحتوي على مفتاح التطبيق، فاحتفظ به سرًا.",
-  "Open": "فتح",
   "What Yogurt keeps": "ما يحتفظ به Yogurt",
   "Counted from when each meeting ended. Audio and transcripts go only once the summary is saved, and notes stay.": "يُحسب من وقت انتهاء كل اجتماع. لا يُحذف الصوت والنصوص إلا بعد حفظ الملخص، وتبقى الملاحظات.",
   "Delete transcripts": "حذف النصوص",
@@ -856,8 +855,6 @@
     "many": "تنطبق القاعدة بالفعل على {count} اجتماعًا. ستُحذف مقاطع الفيديو الخاصة بها الآن.",
     "other": "تنطبق القاعدة بالفعل على {count} اجتماع. ستُحذف مقاطع الفيديو الخاصة بها الآن."
   },
-  "Keep audio recordings after meetings": "الاحتفاظ بالتسجيلات الصوتية بعد الاجتماعات",
-  "When off, new meetings' audio is deleted once the summary is saved.": "عند إيقافه، يُحذف صوت الاجتماعات الجديدة بعد حفظ الملخص.",
   "Edit or regenerate summary": "تعديل الملخص أو إعادة إنشائه",
   "Edit summary": "تعديل الملخص",
   "Edit using the transcript too": "التعديل باستخدام النص أيضًا",
