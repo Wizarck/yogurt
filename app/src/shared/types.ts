@@ -48,6 +48,8 @@ export type YogurtApi = {
   prompt: {
     state(): Promise<PromptView | null>
     act(action: PromptAction): void
+    /** the screen button turned on or off; false: Screen Recording is off (the Mac was asked) */
+    screen(on: boolean): Promise<boolean>
   }
   /** the small recording widget */
   widget: {

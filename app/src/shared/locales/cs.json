@@ -816,5 +816,6 @@
   "Also read the call's screen": "Číst i obrazovku hovoru",
   "Record with screen": "Nahrávat s obrazovkou",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt nemůže číst obrazovku hovoru. Povolte nahrávání obrazovky v Nastavení systému.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Nahrané video a obrázky přečtené z obrazovky hovoru se uchovávají, aby šly přečíst znovu. Bez nich obrazovku později přečíst nepůjde, například jiným modelem."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Nahrané video a obrázky přečtené z obrazovky hovoru se uchovávají, aby šly přečíst znovu. Bez nich obrazovku později přečíst nepůjde, například jiným modelem.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Povolte Yogurtu nahrávání obrazovky a po vyzvání ho znovu otevřete."
 }

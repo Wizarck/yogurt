@@ -17,7 +17,7 @@ import { isAppRoute } from '../shared/routes'
 import { resumesNote } from '../shared/agendaNote'
 import { relaunchOptions, stripAppImageEnv } from './relaunch'
 import { capabilities, micListHelper, platformOf, supportedKinds } from '../shared/platform'
-import { app, BrowserWindow, desktopCapturer, dialog, ipcMain, nativeTheme, Notification, protocol, safeStorage, shell } from 'electron'
+import { app, BrowserWindow, desktopCapturer, dialog, ipcMain, nativeTheme, Notification, protocol, safeStorage, shell, systemPreferences } from 'electron'
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import os from 'node:os'
 import { spawn } from 'node:child_process'
@@ -319,12 +319,23 @@ function startDetection() {
   const prompts = createPrompts({
     windowVisible: () => !!win && win.isVisible() && !win.isMinimized(),
     takeNotes: (p, screen) => {
-      // only the meeting this card starts reads the call's window; one already recording, or a finished note, does not
-      liveScreen?.next(screen && p.screen ? p.screen : null)
-      try { begin({ title: p.title || t('{app} call', { app: p.app ?? '' }).trim(), event: p.event, app: p.app }) } finally { liveScreen?.next(null) }
+      // only the meeting this card starts reads the call's window; one already recording does not
+      const target = screen && p.screen ? p.screen : null
+      liveScreen?.next(target)
+      let started
+      try { started = begin({ title: p.title || t('{app} call', { app: p.app ?? '' }).trim(), event: p.event, app: p.app }) } finally { liveScreen?.next(null) }
+      // the call's event already has a note: the note resumes it, and that part reads the call's window too
+      if (target && started.resumeRequested) liveScreen?.next(target, started.id)
     },
     // a call's window is read on a Mac only (Windows and Linux: see the PR notes)
     screen: (p) => platform === 'darwin' && !!p.screen,
+    // the screen button turned on asks the Mac then, before anything records: granting it makes macOS reopen Yogurt
+    screenAccess: async () => {
+      if (isFake()) return fakeAccess.screen === 'granted'
+      if (systemPreferences.getMediaAccessStatus('screen') === 'granted') return true
+      await desktopCapturer.getSources({ types: ['screen'], thumbnailSize: { width: 0, height: 0 } }).catch(() => {})
+      return false
+    },
     stop: (id) => { stopMeeting(id) },
     dismissed: (key) => watcher.dismiss(key),
     keepGoing: () => watcher.keepGoing(),
@@ -625,12 +636,8 @@ app.whenReady().then(() => {
       try { store.addSegments([seg]) } catch (e) { console.error('saving a screen line failed', e); return }
       win?.webContents.send('transcript:segment', { ...seg, speakerColor: speakerColor(seg.track, seg.speaker, []) })
     },
-    noAccess: () => {
-      tell({ t: 'warn', code: 'no-screen-access' })
-      // the helper's own request can't prompt (a child without a window): Yogurt asks, which shows the Mac's prompt
-      // and lists Yogurt under Screen & System Audio Recording
-      if (!isFake()) desktopCapturer.getSources({ types: ['screen'], thumbnailSize: { width: 0, height: 0 } }).catch(() => {})
-    },
+    // never asks the Mac here: granting it mid-recording makes macOS quit Yogurt (the card's screen button asks)
+    noAccess: () => tell({ t: 'warn', code: 'no-screen-access' }),
     start: (args) => {
       if (isFake()) return fakeScreenProc(args, () => fakeAccess.screen === 'granted')
       const child = spawn(audioHelperPath(), args, { stdio: ['pipe', 'pipe', 'pipe'], windowsHide: true })

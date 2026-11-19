@@ -765,5 +765,6 @@
   "Also read the call's screen": "कॉल की स्क्रीन भी पढ़ें",
   "Record with screen": "स्क्रीन के साथ रिकॉर्ड करें",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt कॉल की स्क्रीन नहीं पढ़ पा रहा। सिस्टम सेटिंग्ज़ में स्क्रीन रिकॉर्डिंग की अनुमति दें।",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "अपलोड किया गया वीडियो और कॉल की स्क्रीन से पढ़ी गई तस्वीरें रखी जाती हैं ताकि उन्हें फिर से पढ़ा जा सके। इनके बिना स्क्रीन बाद में नहीं पढ़ी जा सकती, जैसे किसी दूसरे मॉडल से।"
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "अपलोड किया गया वीडियो और कॉल की स्क्रीन से पढ़ी गई तस्वीरें रखी जाती हैं ताकि उन्हें फिर से पढ़ा जा सके। इनके बिना स्क्रीन बाद में नहीं पढ़ी जा सकती, जैसे किसी दूसरे मॉडल से।",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Yogurt के लिए स्क्रीन रिकॉर्डिंग की अनुमति दें, फिर कहे जाने पर उसे दोबारा खोलें।"
 }

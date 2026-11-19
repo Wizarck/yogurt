@@ -765,5 +765,6 @@
   "Also read the call's screen": "Aramanın ekranını da oku",
   "Record with screen": "Ekranla kaydet",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt aramanın ekranını okuyamıyor. Sistem Ayarları’ndan ekran kaydına izin verin.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Yüklenen video ve bir aramanın ekranından okunan görüntüler, yeniden okunabilsin diye saklanır. Bunlar olmadan ekran daha sonra, örneğin başka bir modelle okunamaz."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Yüklenen video ve bir aramanın ekranından okunan görüntüler, yeniden okunabilsin diye saklanır. Bunlar olmadan ekran daha sonra, örneğin başka bir modelle okunamaz.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Yogurt'a ekran kaydı izni ver, ardından istendiğinde yeniden aç."
 }

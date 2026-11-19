@@ -79,6 +79,14 @@ test("Start recording alone reads no screen; with Screen Recording off the note 
     await fake(app, 'signals', { micApps: [zoom], events: [] })
     const p = await card(app)
     await p.getByTestId('prompt-screen').click()
+    // asked before anything records: the card grows a row saying how, with the System Settings button
+    await expect(p.getByTestId('prompt-screen-access')).toHaveText(/Allow screen recording for Yogurt, then reopen it when asked\.Open Settings/)
+    await expect.poll(() => p.evaluate(() => innerHeight)).toBe(100)
+    await p.getByTestId('prompt-screen').click()
+    await expect(p.getByTestId('prompt-screen-access')).toHaveCount(0)
+    await expect.poll(() => p.evaluate(() => innerHeight)).toBe(60)
+    await p.getByTestId('prompt-screen').click()
+    await expect(p.getByTestId('prompt-screen-settings')).toBeVisible()
     await p.getByTestId('prompt-take-notes').click()
     await expect(page.getByTestId('note-state')).toHaveAttribute('data-state', 'recording')
     const id = await meetingId(app)
@@ -87,5 +95,34 @@ test("Start recording alone reads no screen; with Screen Recording off the note 
     await expect(page.getByTestId('rec-hint-fix')).toHaveAttribute('data-kind', 'screen')
     await expect(page.getByTestId('note-state')).toHaveAttribute('data-state', 'recording')
     expect(await screenLines(page, id)).toEqual([])
+  } finally { await app.close() }
+})
+
+test("a call whose event already has a note resumes it from the card, and with the screen button on that part reads the call's screen", async () => {
+  const { app, page } = await launch()
+  try {
+    const start = Date.now() - 60_000
+    const event = { id: 'ev1', title: 'Design review', start, end: start + 30 * 60_000, attendees: [], url: 'https://zoom.us/j/1' }
+    await fake(app, 'signals', { micApps: [zoom], events: [event] })
+    await (await card(app)).getByTestId('prompt-take-notes').click()
+    await expect(page.getByTestId('note-state')).toHaveAttribute('data-state', 'recording')
+    const id = await meetingId(app)
+    await page.waitForTimeout(1500)
+    await page.getByTestId('note-stop').click()
+    await expect(page.getByTestId('note-state')).toHaveAttribute('data-state', /^(stopped|done)$/)
+    expect(await screenLines(page, id)).toEqual([])
+    const before = await page.evaluate(id => window.yogurt.transcript.get(id).then(lines => Math.max(0, ...lines.map(l => l.endMs))), id)
+
+    await fake(app, 'signals', { micApps: [], events: [event] })
+    await fake(app, 'signals', { micApps: [zoom], events: [event] })
+    const p = await card(app)
+    await p.getByTestId('prompt-screen').click()
+    await p.getByTestId('prompt-take-notes').click()
+    await expect(page.getByTestId('note-state')).toHaveAttribute('data-state', 'recording')
+    expect(await meetingId(app)).toBe(id)
+    await expect.poll(() => screenLines(page, id)).toEqual(['Q3 roadmap\nLaunch on Tuesday', 'Budget 40,000 EUR\nOwner: Ann Lee'])
+    // after the earlier part, not over it
+    const at = await page.evaluate(id => window.yogurt.transcript.get(id).then(lines => lines.filter(l => l.speaker === '\u001fscreen').map(l => l.startMs)), id)
+    expect(Math.min(...at)).toBeGreaterThanOrEqual(before)
   } finally { await app.close() }
 })

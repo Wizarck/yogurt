@@ -797,5 +797,6 @@
   "Also read the call's screen": "Lire aussi l’écran de l’appel",
   "Record with screen": "Enregistrer avec l’écran",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt ne peut pas lire l’écran de l’appel. Autorisez l’enregistrement de l’écran dans Réglages Système.",
-  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Une vidéo importée et les images lues sur l’écran d’un appel sont conservées pour pouvoir être relues. Sans elles, l’écran ne pourra pas être lu ultérieurement, par exemple avec un autre modèle."
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Une vidéo importée et les images lues sur l’écran d’un appel sont conservées pour pouvoir être relues. Sans elles, l’écran ne pourra pas être lu ultérieurement, par exemple avec un autre modèle.",
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Autorisez l'enregistrement de l'écran pour Yogurt, puis rouvrez-le lorsque cela vous est demandé."
 }

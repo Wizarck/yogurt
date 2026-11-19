@@ -8,11 +8,13 @@ import { floatingType, floatOverFullScreen } from './float'
 
 const BACKGROUND = process.env.YOGURT_BACKGROUND === '1'
 const ACTIONS: readonly string[] = ['take-notes', 'take-notes-screen', 'close', 'stop', 'keep-going'] satisfies PromptAction[]
+/** the Take notes card's height; a row taller while it says how to allow screen recording */
+const START_H = 60, START_ACCESS_H = 100
 
 /** the card at the top right: small, frameless, on top of everything, never takes focus from what the person is doing */
 function createCard(kind: PromptView['kind'], os = 'darwin'): BrowserWindow {
   const { workArea } = screen.getPrimaryDisplay()
-  const width = kind === 'start' ? 381 : 380, height = kind === 'start' ? 60 : 128
+  const width = kind === 'start' ? 381 : 380, height = kind === 'start' ? START_H : 128
   const background = () => nativeTheme.shouldUseDarkColors ? '#29292B' : '#FFFFFF'
   const type = floatingType(os)
   const w = new BrowserWindow({
@@ -43,6 +45,8 @@ export function createPrompts(d: {
   takeNotes(p: Prompt, screen: boolean): void
   /** can the card offer to read this call's window? (a Mac) */
   screen?(p: Prompt): boolean
+  /** may Yogurt read the screen? Asks the Mac when not */
+  screenAccess?(): Promise<boolean>
   stop(meetingId: string): void
   dismissed(key: string): void
   keepGoing(): void
@@ -101,6 +105,12 @@ export function createPrompts(d: {
 
   ipcMain.handle('prompt:state', () => view)
   ipcMain.handle('prompt:act', (_e, action: unknown) => { if (ACTIONS.includes(action as PromptAction)) act(action as PromptAction) })
+  // the screen button: on with Screen Recording off, the card grows a row saying how to allow it
+  ipcMain.handle('prompt:screen', async (_e, on: unknown) => {
+    const allowed = on !== true || await (d.screenAccess?.() ?? true)
+    if (view?.kind === 'start' && card && !card.isDestroyed()) card.setBounds({ height: allowed ? START_H : START_ACCESS_H })
+    return allowed
+  })
 
   return {
     offer(p: Prompt) { prompt = p; show({ kind: 'start', key: p.key, app: p.app, title: p.title, ...(p.screen && d.screen?.(p) ? { screen: true } : {}) }) },
