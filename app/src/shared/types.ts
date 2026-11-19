@@ -405,9 +405,12 @@ export type TranscriptPartial = { meetingId: string; track: 'me' | 'them'; start
 
 /** What the small card at the top right of the screen shows */
 export type PromptView =
-  | { kind: 'start'; key: string; app: string | null; /** the event's title; empty when there is none */ title: string }
+  | { kind: 'start'; key: string; app: string | null; /** the event's title; empty when there is none */ title: string
+    /** the card can offer to read the call's window too (a Mac, a call app's window) */
+    screen?: boolean }
   | { kind: 'stop'; meetingId: string; title: string }
-export type PromptAction = 'take-notes' | 'close' | 'stop' | 'keep-going'
+/** take-notes-screen: take notes and read the call's window too */
+export type PromptAction = 'take-notes' | 'take-notes-screen' | 'close' | 'stop' | 'keep-going'
 
 /** A microphone on this Mac: its Core Audio UID, its name, and whether the Mac uses it now (Auto records with that one) */
 export type MicDevice = { id: string; name: string; isDefault: boolean }

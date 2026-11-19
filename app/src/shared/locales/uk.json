@@ -804,11 +804,14 @@
   "Reading the screen…": "Читаємо екран…",
   "Delete video": "Видалити відео",
   "Don't keep it": "Не зберігати",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Завантажене відео зберігається, щоб екран із нього можна було прочитати знову. Без нього екран не вдасться прочитати пізніше, наприклад іншою моделлю.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} зустріч уже підпадає під правило. Її відео буде видалено зараз.",
     "few": "{count} зустрічі вже підпадають під правило. Їхні відео буде видалено зараз.",
     "many": "{count} зустрічей уже підпадають під правило. Їхні відео буде видалено зараз.",
     "other": "{count} зустрічі вже підпадають під правило. Їхні відео буде видалено зараз."
-  }
+  },
+  "Also read the call's screen": "Читати й екран дзвінка",
+  "Record with screen": "Записувати з екраном",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt не може прочитати екран дзвінка. Дозвольте запис екрана в Системних параметрах.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Завантажене відео та зображення, прочитані з екрана дзвінка, зберігаються, щоб їх можна було прочитати знову. Без них екран не вдасться прочитати пізніше, наприклад іншою моделлю."
 }

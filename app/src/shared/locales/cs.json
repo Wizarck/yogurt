@@ -807,11 +807,14 @@
   "Reading the screen…": "Čtení obrazovky…",
   "Delete video": "Smazat video",
   "Don't keep it": "Neuchovávat",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Nahrané video se uchovává, aby šlo jeho obrazovku přečíst znovu. Bez něj obrazovku později přečíst nepůjde, například jiným modelem.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} schůzka už splňuje podmínku. Její video se teď smaže.",
     "few": "{count} schůzky už splňují podmínku. Jejich videa se teď smažou.",
     "many": "{count} schůzky už splňuje podmínku. Jejich videa se teď smažou.",
     "other": "{count} schůzek už splňuje podmínku. Jejich videa se teď smažou."
-  }
+  },
+  "Also read the call's screen": "Číst i obrazovku hovoru",
+  "Record with screen": "Nahrávat s obrazovkou",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt nemůže číst obrazovku hovoru. Povolte nahrávání obrazovky v Nastavení systému.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Nahrané video a obrázky přečtené z obrazovky hovoru se uchovávají, aby šly přečíst znovu. Bez nich obrazovku později přečíst nepůjde, například jiným modelem."
 }

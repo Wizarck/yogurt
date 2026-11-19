@@ -792,10 +792,13 @@
   "Reading the screen…": "Lettura dello schermo…",
   "Delete video": "Elimina video",
   "Don't keep it": "Non conservarlo",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Un video caricato viene conservato per poterne rileggere lo schermo. Senza il video, lo schermo non potrà essere letto in seguito, ad esempio con un altro modello.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} riunione rientra già nella regola. Il suo video viene eliminato ora.",
     "many": "{count} riunioni rientrano già nella regola. I loro video vengono eliminati ora.",
     "other": "{count} riunioni rientrano già nella regola. I loro video vengono eliminati ora."
-  }
+  },
+  "Also read the call's screen": "Leggi anche lo schermo della chiamata",
+  "Record with screen": "Registra con lo schermo",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt non riesce a leggere lo schermo della chiamata. Consenti la registrazione dello schermo in Impostazioni di Sistema.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Un video caricato e le immagini lette dallo schermo di una chiamata vengono conservati per poterli rileggere. Senza di essi, lo schermo non potrà essere letto in seguito, ad esempio con un altro modello."
 }

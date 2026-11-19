@@ -719,6 +719,9 @@
   "Reading the screen…": "Đang đọc màn hình…",
   "Delete video": "Xóa video",
   "Don't keep it": "Không giữ lại",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Video đã tải lên được giữ lại để có thể đọc lại màn hình của nó. Nếu không có video, sẽ không thể đọc màn hình sau này, chẳng hạn bằng một mô hình khác.",
-  "{count} meetings already qualify. Their videos are deleted now.": "{count} cuộc họp đã đủ điều kiện. Video của chúng sẽ bị xóa ngay."
+  "{count} meetings already qualify. Their videos are deleted now.": "{count} cuộc họp đã đủ điều kiện. Video của chúng sẽ bị xóa ngay.",
+  "Also read the call's screen": "Đọc cả màn hình cuộc gọi",
+  "Record with screen": "Ghi kèm màn hình",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt không đọc được màn hình cuộc gọi. Hãy cho phép ghi màn hình trong Cài đặt hệ thống.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Video đã tải lên và các hình ảnh đọc từ màn hình cuộc gọi được giữ lại để có thể đọc lại. Nếu không có chúng, sẽ không thể đọc màn hình sau này, chẳng hạn bằng một mô hình khác."
 }

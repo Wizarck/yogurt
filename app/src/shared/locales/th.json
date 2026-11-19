@@ -719,6 +719,9 @@
   "Reading the screen…": "กำลังอ่านหน้าจอ…",
   "Delete video": "ลบวิดีโอ",
   "Don't keep it": "ไม่เก็บไว้",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "วิดีโอที่อัปโหลดจะถูกเก็บไว้เพื่อให้อ่านหน้าจอได้อีกครั้ง หากไม่มีวิดีโอ จะอ่านหน้าจอในภายหลังไม่ได้ เช่น ด้วยโมเดลอื่น",
-  "{count} meetings already qualify. Their videos are deleted now.": "มีการประชุม {count} รายการที่เข้าเงื่อนไขแล้ว วิดีโอของการประชุมเหล่านี้จะถูกลบตอนนี้"
+  "{count} meetings already qualify. Their videos are deleted now.": "มีการประชุม {count} รายการที่เข้าเงื่อนไขแล้ว วิดีโอของการประชุมเหล่านี้จะถูกลบตอนนี้",
+  "Also read the call's screen": "อ่านหน้าจอของสายด้วย",
+  "Record with screen": "บันทึกพร้อมหน้าจอ",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt อ่านหน้าจอของสายไม่ได้ อนุญาตการบันทึกหน้าจอในการตั้งค่าระบบ",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "วิดีโอที่อัปโหลดและภาพที่อ่านจากหน้าจอของสายจะถูกเก็บไว้เพื่อให้อ่านได้อีกครั้ง หากไม่มีสิ่งเหล่านี้ จะอ่านหน้าจอในภายหลังไม่ได้ เช่น ด้วยโมเดลอื่น"
 }

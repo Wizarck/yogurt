@@ -770,9 +770,12 @@
   "Reading the screen…": "Bildschirm wird gelesen…",
   "Delete video": "Video löschen",
   "Don't keep it": "Nicht behalten",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Ein hochgeladenes Video wird behalten, damit sein Bildschirm erneut gelesen werden kann. Ohne das Video lässt sich der Bildschirm später nicht mehr lesen, zum Beispiel mit einem anderen Modell.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "1 Meeting ist bereits betroffen. Sein Video wird jetzt gelöscht.",
     "other": "{count} Meetings sind bereits betroffen. Ihre Videos werden jetzt gelöscht."
-  }
+  },
+  "Also read the call's screen": "Auch den Bildschirm des Anrufs lesen",
+  "Record with screen": "Mit Bildschirm aufnehmen",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt kann den Bildschirm des Anrufs nicht lesen. Erlaube die Bildschirmaufnahme in den Systemeinstellungen.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Ein hochgeladenes Video und die vom Bildschirm eines Anrufs gelesenen Bilder werden behalten, damit sie erneut gelesen werden können. Ohne sie lässt sich der Bildschirm später nicht mehr lesen, zum Beispiel mit einem anderen Modell."
 }

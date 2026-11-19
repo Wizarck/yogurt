@@ -770,9 +770,12 @@
   "Reading the screen…": "Scherm lezen…",
   "Delete video": "Video verwijderen",
   "Don't keep it": "Niet bewaren",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "Een geüploade video wordt bewaard zodat het scherm opnieuw kan worden gelezen. Zonder de video kan het scherm later niet meer worden gelezen, bijvoorbeeld met een ander model.",
   "{count} meetings already qualify. Their videos are deleted now.": {
     "one": "{count} meeting valt er al onder. De video wordt nu verwijderd.",
     "other": "{count} meetings vallen er al onder. Hun video’s worden nu verwijderd."
-  }
+  },
+  "Also read the call's screen": "Ook het scherm van het gesprek lezen",
+  "Record with screen": "Opnemen met scherm",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt kan het scherm van het gesprek niet lezen. Sta schermopname toe in Systeeminstellingen.",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Een geüploade video en de beelden die van het scherm van een gesprek zijn gelezen, worden bewaard zodat ze opnieuw kunnen worden gelezen. Zonder deze kan het scherm later niet meer worden gelezen, bijvoorbeeld met een ander model."
 }

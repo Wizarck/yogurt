@@ -11,7 +11,7 @@ const PRESET_LABEL: Record<number, () => string> = {
 }
 const ROWS: Array<{ kind: RetentionKind; label: () => string; description?: () => string }> = [
   { kind: 'audio', label: () => t('Delete audio') },
-  { kind: 'video', label: () => t('Delete video'), description: () => t("An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.") },
+  { kind: 'video', label: () => t('Delete video'), description: () => t("An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.") },
   { kind: 'transcript', label: () => t('Delete transcripts'), description: () => t('Its audio goes with it.') },
   { kind: 'meeting', label: () => t('Move meetings to the Trash'), description: () => t('Meetings in the Trash are deleted for good after {count} days, with their recordings.', { count: TRASH_DAYS }) },
 ]

@@ -23,6 +23,8 @@ export type Track = 'me' | 'them'
 export type WarnCode = 'no-system-audio' | 'device-changed' | 'no-mic' | 'mic-gone'
 /** Transcription trouble, shown like the recorder's hints: some audio could not be transcribed / no speech model yet / the queue overflowed */
 export type TranscribeWarn = 'transcribe-failed' | 'no-speech-model' | 'falling-behind'
+/** The call's window can't be read: Screen Recording is off (the recording goes on with its sound) */
+export type ScreenWarn = 'no-screen-access'
 const WARN_CODES: readonly string[] = ['no-system-audio', 'device-changed', 'no-mic', 'mic-gone'] satisfies WarnCode[]
 /** The mic recording now, after each start or switch: uid null is Auto (the Mac's default input), name the device's */
 export type MicInUse = { uid: string | null; name: string | null }
@@ -243,7 +245,7 @@ export const activeCapture = (): Capture | null => active
 /** What the recording widget hears about: levels, warnings, and the helper's restarts */
 export type RecordingEvent =
   | { t: 'level'; me: number; them: number }
-  | { t: 'warn'; code: WarnCode | TranscribeWarn }
+  | { t: 'warn'; code: WarnCode | TranscribeWarn | ScreenWarn }
   | { t: 'hiccup' }
   | { t: 'gave-up' }
   | { t: 'paused'; meetingId: string; paused: boolean; at: number }

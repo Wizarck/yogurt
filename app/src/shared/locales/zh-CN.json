@@ -719,6 +719,9 @@
   "Reading the screen…": "正在读取屏幕…",
   "Delete video": "删除视频",
   "Don't keep it": "不保留",
-  "An uploaded video is kept so its screen can be read again. Without it, the screen can't be read later, for example with another model.": "上传的视频会被保留，以便再次读取其屏幕内容。没有视频，之后就无法再读取屏幕，例如使用其他模型时。",
-  "{count} meetings already qualify. Their videos are deleted now.": "已有 {count} 个会议符合条件。其视频将立即删除。"
+  "{count} meetings already qualify. Their videos are deleted now.": "已有 {count} 个会议符合条件。其视频将立即删除。",
+  "Also read the call's screen": "同时读取通话屏幕",
+  "Record with screen": "录音并读取屏幕",
+  "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt 无法读取通话屏幕。请在系统设置中允许屏幕录制。",
+  "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "上传的视频以及从通话屏幕读取的图片会被保留，以便再次读取。没有它们，之后就无法再读取屏幕，例如使用其他模型时。"
 }
