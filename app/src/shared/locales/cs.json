@@ -840,5 +840,14 @@
   "Record with screen": "Nahrávat s obrazovkou",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt nemůže číst obrazovku hovoru. Povolte nahrávání obrazovky v Nastavení systému.",
   "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Nahrané video a obrázky přečtené z obrazovky hovoru se uchovávají, aby šly přečíst znovu. Bez nich obrazovku později přečíst nepůjde, například jiným modelem.",
-  "Allow screen recording for Yogurt, then reopen it when asked.": "Povolte Yogurtu nahrávání obrazovky a po vyzvání ho znovu otevřete."
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Povolte Yogurtu nahrávání obrazovky a po vyzvání ho znovu otevřete.",
+  "Only apps added here": "Jen aplikace přidané zde",
+  "Each app gets its own key, and other apps on this Mac can’t read anything.": "Každá aplikace dostane vlastní klíč a ostatní aplikace na tomto Macu nemohou nic číst.",
+  "Each app gets its own key, and other apps on this computer can’t read anything.": "Každá aplikace dostane vlastní klíč a ostatní aplikace na tomto počítači nemohou nic číst.",
+  "Add each app here, then paste its setup into the app as a local MCP server.": "Přidejte sem každou aplikaci a pak vložte její nastavení do aplikace jako místní MCP server.",
+  "No apps added yet.": "Zatím nejsou přidané žádné aplikace.",
+  "Copy setup": "Kopírovat nastavení",
+  "App name": "Název aplikace",
+  "Add an app": "Přidat aplikaci",
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Vložte toto nastavení do aplikace {name}. Obsahuje klíč aplikace, tak ho nikomu neukazujte."
 }

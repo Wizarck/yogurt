@@ -747,5 +747,14 @@
   "Record with screen": "錄音並讀取螢幕",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt 無法讀取通話螢幕。請在系統設定中允許螢幕錄製。",
   "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "上傳的影片以及從通話螢幕讀取的圖片會被保留，以便再次讀取。沒有它們，之後就無法再讀取螢幕，例如使用其他模型時。",
-  "Allow screen recording for Yogurt, then reopen it when asked.": "允許 Yogurt 錄製螢幕，然後在提示時重新開啟它。"
+  "Allow screen recording for Yogurt, then reopen it when asked.": "允許 Yogurt 錄製螢幕，然後在提示時重新開啟它。",
+  "Only apps added here": "僅限在此新增的 App",
+  "Each app gets its own key, and other apps on this Mac can’t read anything.": "每個 App 都有自己的金鑰，這台 Mac 上的其他 App 無法讀取任何內容。",
+  "Each app gets its own key, and other apps on this computer can’t read anything.": "每個 App 都有自己的金鑰，這台電腦上的其他 App 無法讀取任何內容。",
+  "Add each app here, then paste its setup into the app as a local MCP server.": "在此新增每個 App，然後將其設定作為本機 MCP 伺服器貼到 App 中。",
+  "No apps added yet.": "尚未新增任何 App。",
+  "Copy setup": "複製設定",
+  "App name": "App 名稱",
+  "Add an app": "新增 App",
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "將此設定貼到 {name} 中。其中包含該 App 的金鑰，請勿分享。"
 }

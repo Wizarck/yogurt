@@ -801,5 +801,14 @@
   "Record with screen": "Mag-record kasama ang screen",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Hindi mabasa ng Yogurt ang screen ng tawag. Payagan ang screen recording sa System Settings.",
   "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Itinatago ang na-upload na video at ang mga larawang nabasa mula sa screen ng tawag para mabasa ulit ang mga ito. Kung wala ang mga ito, hindi na mababasa ang screen sa ibang pagkakataon, halimbawa gamit ang ibang modelo.",
-  "Allow screen recording for Yogurt, then reopen it when asked.": "Payagan ang pag-record ng screen para sa Yogurt, pagkatapos ay buksan itong muli kapag hiniling."
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Payagan ang pag-record ng screen para sa Yogurt, pagkatapos ay buksan itong muli kapag hiniling.",
+  "Only apps added here": "Mga app na idinagdag dito lang",
+  "Each app gets its own key, and other apps on this Mac can’t read anything.": "Bawat app ay may sariling key, at walang mababasa ang ibang app sa Mac na ito.",
+  "Each app gets its own key, and other apps on this computer can’t read anything.": "Bawat app ay may sariling key, at walang mababasa ang ibang app sa computer na ito.",
+  "Add each app here, then paste its setup into the app as a local MCP server.": "Idagdag dito ang bawat app, pagkatapos ay i-paste ang setup nito sa app bilang lokal na MCP server.",
+  "No apps added yet.": "Wala pang naidagdag na app.",
+  "Copy setup": "Kopyahin ang setup",
+  "App name": "Pangalan ng app",
+  "Add an app": "Magdagdag ng app",
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "I-paste ang setup na ito sa {name}. Nasa loob nito ang key ng app, kaya huwag itong ibahagi."
 }

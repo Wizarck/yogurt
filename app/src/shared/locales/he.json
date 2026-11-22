@@ -815,5 +815,14 @@
   "Record with screen": "הקלטה עם מסך",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt לא יכול לקרוא את מסך השיחה. יש לאפשר הקלטת מסך בהגדרות המערכת.",
   "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "וידאו שהועלה והתמונות שנקראו ממסך של שיחה נשמרים כדי שאפשר יהיה לקרוא אותם שוב. בלעדיהם אי אפשר לקרוא את המסך מאוחר יותר, למשל באמצעות מודל אחר.",
-  "Allow screen recording for Yogurt, then reopen it when asked.": "אפשרו ל-Yogurt הקלטת מסך, ואז פתחו אותו מחדש כשתתבקשו."
+  "Allow screen recording for Yogurt, then reopen it when asked.": "אפשרו ל-Yogurt הקלטת מסך, ואז פתחו אותו מחדש כשתתבקשו.",
+  "Only apps added here": "רק אפליקציות שנוספו כאן",
+  "Each app gets its own key, and other apps on this Mac can’t read anything.": "כל אפליקציה מקבלת מפתח משלה, ואפליקציות אחרות ב-Mac הזה לא יכולות לקרוא דבר.",
+  "Each app gets its own key, and other apps on this computer can’t read anything.": "כל אפליקציה מקבלת מפתח משלה, ואפליקציות אחרות במחשב הזה לא יכולות לקרוא דבר.",
+  "Add each app here, then paste its setup into the app as a local MCP server.": "יש להוסיף כאן כל אפליקציה, ואז להדביק את ההגדרה שלה באפליקציה כשרת MCP מקומי.",
+  "No apps added yet.": "עדיין לא נוספו אפליקציות.",
+  "Copy setup": "העתקת ההגדרה",
+  "App name": "שם האפליקציה",
+  "Add an app": "הוספת אפליקציה",
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "יש להדביק את ההגדרה הזו ב-{name}. היא כוללת את המפתח של האפליקציה, לכן אין לשתף אותה."
 }

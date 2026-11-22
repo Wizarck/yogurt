@@ -801,5 +801,14 @@
   "Record with screen": "Mit Bildschirm aufnehmen",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt kann den Bildschirm des Anrufs nicht lesen. Erlaube die Bildschirmaufnahme in den Systemeinstellungen.",
   "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Ein hochgeladenes Video und die vom Bildschirm eines Anrufs gelesenen Bilder werden behalten, damit sie erneut gelesen werden können. Ohne sie lässt sich der Bildschirm später nicht mehr lesen, zum Beispiel mit einem anderen Modell.",
-  "Allow screen recording for Yogurt, then reopen it when asked.": "Erlaube Yogurt die Bildschirmaufnahme und öffne es danach erneut, wenn du dazu aufgefordert wirst."
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Erlaube Yogurt die Bildschirmaufnahme und öffne es danach erneut, wenn du dazu aufgefordert wirst.",
+  "Only apps added here": "Nur hier hinzugefügte Apps",
+  "Each app gets its own key, and other apps on this Mac can’t read anything.": "Jede App bekommt einen eigenen Schlüssel, und andere Apps auf diesem Mac können nichts lesen.",
+  "Each app gets its own key, and other apps on this computer can’t read anything.": "Jede App bekommt einen eigenen Schlüssel, und andere Apps auf diesem Computer können nichts lesen.",
+  "Add each app here, then paste its setup into the app as a local MCP server.": "Füge jede App hier hinzu und füge dann ihre Einrichtung als lokalen MCP-Server in die App ein.",
+  "No apps added yet.": "Noch keine Apps hinzugefügt.",
+  "Copy setup": "Einrichtung kopieren",
+  "App name": "App-Name",
+  "Add an app": "App hinzufügen",
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Füge diese Einrichtung in {name} ein. Sie enthält den Schlüssel der App, also behalte sie für dich."
 }

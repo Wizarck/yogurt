@@ -801,5 +801,14 @@
   "Record with screen": "Opnemen met scherm",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt kan het scherm van het gesprek niet lezen. Sta schermopname toe in Systeeminstellingen.",
   "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Een geüploade video en de beelden die van het scherm van een gesprek zijn gelezen, worden bewaard zodat ze opnieuw kunnen worden gelezen. Zonder deze kan het scherm later niet meer worden gelezen, bijvoorbeeld met een ander model.",
-  "Allow screen recording for Yogurt, then reopen it when asked.": "Sta schermopname toe voor Yogurt en open het opnieuw als daarom wordt gevraagd."
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Sta schermopname toe voor Yogurt en open het opnieuw als daarom wordt gevraagd.",
+  "Only apps added here": "Alleen apps die hier zijn toegevoegd",
+  "Each app gets its own key, and other apps on this Mac can’t read anything.": "Elke app krijgt een eigen sleutel, en andere apps op deze Mac kunnen niets lezen.",
+  "Each app gets its own key, and other apps on this computer can’t read anything.": "Elke app krijgt een eigen sleutel, en andere apps op deze computer kunnen niets lezen.",
+  "Add each app here, then paste its setup into the app as a local MCP server.": "Voeg hier elke app toe en plak daarna de instelling ervan als lokale MCP-server in de app.",
+  "No apps added yet.": "Nog geen apps toegevoegd.",
+  "Copy setup": "Instelling kopiëren",
+  "App name": "Naam van app",
+  "Add an app": "App toevoegen",
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Plak deze instelling in {name}. Ze bevat de sleutel van de app, dus houd haar privé."
 }

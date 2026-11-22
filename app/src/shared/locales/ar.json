@@ -873,5 +873,14 @@
   "Record with screen": "تسجيل مع الشاشة",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "لا يستطيع Yogurt قراءة شاشة المكالمة. اسمح بتسجيل الشاشة في إعدادات النظام.",
   "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "يُحتفظ بالفيديو المرفوع وبالصور المقروءة من شاشة المكالمة حتى يمكن قراءتها مرة أخرى. ومن دونها لا يمكن قراءة الشاشة لاحقًا، مثلًا باستخدام نموذج آخر.",
-  "Allow screen recording for Yogurt, then reopen it when asked.": "اسمح لـ Yogurt بتسجيل الشاشة، ثم أعد فتحه عند الطلب."
+  "Allow screen recording for Yogurt, then reopen it when asked.": "اسمح لـ Yogurt بتسجيل الشاشة، ثم أعد فتحه عند الطلب.",
+  "Only apps added here": "التطبيقات المضافة هنا فقط",
+  "Each app gets its own key, and other apps on this Mac can’t read anything.": "يحصل كل تطبيق على مفتاحه الخاص، ولا يمكن للتطبيقات الأخرى على هذا الـ Mac قراءة أي شيء.",
+  "Each app gets its own key, and other apps on this computer can’t read anything.": "يحصل كل تطبيق على مفتاحه الخاص، ولا يمكن للتطبيقات الأخرى على هذا الكمبيوتر قراءة أي شيء.",
+  "Add each app here, then paste its setup into the app as a local MCP server.": "أضف كل تطبيق هنا، ثم الصق إعداده في التطبيق كخادم MCP محلي.",
+  "No apps added yet.": "لم تتم إضافة أي تطبيقات بعد.",
+  "Copy setup": "نسخ الإعداد",
+  "App name": "اسم التطبيق",
+  "Add an app": "إضافة تطبيق",
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "الصق هذا الإعداد في {name}. يحتوي على مفتاح التطبيق، فاحتفظ به سرًا."
 }

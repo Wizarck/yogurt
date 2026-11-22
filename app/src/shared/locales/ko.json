@@ -747,5 +747,14 @@
   "Record with screen": "화면과 함께 녹음",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt가 통화 화면을 읽을 수 없어요. 시스템 설정에서 화면 기록을 허용하세요.",
   "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "업로드한 비디오와 통화 화면에서 읽은 이미지는 다시 읽을 수 있도록 보관돼요. 이것들이 없으면 나중에 다른 모델 등으로 화면을 읽을 수 없어요.",
-  "Allow screen recording for Yogurt, then reopen it when asked.": "Yogurt에 화면 기록을 허용한 다음, 요청이 나오면 다시 여세요."
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Yogurt에 화면 기록을 허용한 다음, 요청이 나오면 다시 여세요.",
+  "Only apps added here": "여기에 추가한 앱만",
+  "Each app gets its own key, and other apps on this Mac can’t read anything.": "앱마다 고유한 키를 받으며, 이 Mac의 다른 앱은 아무것도 읽을 수 없습니다.",
+  "Each app gets its own key, and other apps on this computer can’t read anything.": "앱마다 고유한 키를 받으며, 이 컴퓨터의 다른 앱은 아무것도 읽을 수 없습니다.",
+  "Add each app here, then paste its setup into the app as a local MCP server.": "여기에서 각 앱을 추가한 다음, 해당 설정을 앱에 로컬 MCP 서버로 붙여 넣으세요.",
+  "No apps added yet.": "아직 추가한 앱이 없습니다.",
+  "Copy setup": "설정 복사",
+  "App name": "앱 이름",
+  "Add an app": "앱 추가",
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "이 설정을 {name}에 붙여 넣으세요. 앱의 키가 들어 있으니 공유하지 마세요."
 }

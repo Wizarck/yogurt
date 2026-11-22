@@ -837,5 +837,14 @@
   "Record with screen": "Записать с экраном",
   "Yogurt can't read the call's screen. Allow screen recording in System Settings.": "Yogurt не может прочитать экран звонка. Разрешите запись экрана в Системных настройках.",
   "An uploaded video, and the pictures read from a call's screen, are kept so they can be read again. Without them, the screen can't be read later, for example with another model.": "Загруженное видео и изображения, прочитанные с экрана звонка, хранятся, чтобы их можно было прочитать снова. Без них экран нельзя будет прочитать позже, например другой моделью.",
-  "Allow screen recording for Yogurt, then reopen it when asked.": "Разрешите Yogurt запись экрана, а затем откройте его снова, когда появится запрос."
+  "Allow screen recording for Yogurt, then reopen it when asked.": "Разрешите Yogurt запись экрана, а затем откройте его снова, когда появится запрос.",
+  "Only apps added here": "Только приложения, добавленные здесь",
+  "Each app gets its own key, and other apps on this Mac can’t read anything.": "Каждое приложение получает свой ключ, а другие приложения на этом Mac ничего не могут прочитать.",
+  "Each app gets its own key, and other apps on this computer can’t read anything.": "Каждое приложение получает свой ключ, а другие приложения на этом компьютере ничего не могут прочитать.",
+  "Add each app here, then paste its setup into the app as a local MCP server.": "Добавьте здесь каждое приложение, а затем вставьте его настройку в приложение как локальный MCP-сервер.",
+  "No apps added yet.": "Приложения ещё не добавлены.",
+  "Copy setup": "Скопировать настройку",
+  "App name": "Название приложения",
+  "Add an app": "Добавить приложение",
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Вставьте эту настройку в {name}. В ней ключ приложения, поэтому никому её не показывайте."
 }
