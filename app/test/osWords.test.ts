@@ -37,6 +37,7 @@ describe('Mac text', () => {
     'Saved on this Mac',
     'This conversation is removed from this Mac for good. Your meetings stay as they are.',
     'Uses the microphone your Mac is set to',
+    'Yogurt AI on this Mac',
     'Yogurt needs a Mac with at least 8 GB of memory.',
     "Your Mac's sound",
     '{count} meetings, with their notes, transcripts and recordings, are removed from this Mac for good.',
@@ -55,6 +56,7 @@ describe('Mac text', () => {
       'Each app gets its own key, and other apps on this computer can’t read anything.',
       'Match Windows', 'Match my system', 'Open Yogurt when Windows starts', 'Open Yogurt when you log in',
       'Show Yogurt in the notification area', 'Show Yogurt in the tray', 'Show in File Explorer', 'Show in Files',
+      'Yogurt AI on this computer',
     ]) expect(keys).toContain(k)
   })
 })

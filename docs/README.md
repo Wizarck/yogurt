@@ -33,12 +33,29 @@ Yogurt connects to the internet to download models from Hugging Face, to get App
 
 If you [connect an AI app](#connect-an-ai-app), it may send what it reads to its own online model.
 
+If you pick [another AI model](#ai-models) for a task, that task's meeting text goes there instead.
+
 ## Change a Summary
 
 Type in a Summary to change it yourself. To have the notes model change it, open **… → Edit or regenerate summary** and add a note, like "shorter" or "add the budget":
 
 - **Edit summary** applies the note to the Summary as it is now, and keeps your own changes. It reads only the Summary unless you tick **Edit using the transcript too**. Reading the transcript is slower, and a long meeting may not fit the notes model at once, so it is then read in parts. For a few seconds afterwards, **Undo** puts the Summary back as it was.
 - **Regenerate** writes the Summary again from the meeting, and replaces your changes.
+
+## AI models
+
+Yogurt's own model on your computer writes summaries and titles, answers Ask, and suggests folders. In **Settings → AI models** you can pick another one for each of these:
+
+- **Your server:** any OpenAI-compatible server, like LM Studio, Ollama, or a hosted one. Enter its address, a key if it needs one, and the model (**Test connection** lists them), then **Save**. The key is kept with your system's keychain and is never shown again. **Context, in tokens** is how much the server's model reads at once.
+- **An AI agent app** on your computer: Hermes, Codex or Claude Code. Each appears once Yogurt finds it, and uses its own sign-in and model. Yogurt runs it in an empty folder, turns down every tool it asks to use, and only reads its answer.
+
+If the one you picked fails before it writes anything, Yogurt's own model answers instead, when the question fits it. Settings says where meeting text goes while any task uses something else.
+
+## Yogurt AI on your computer
+
+In **Settings → AI models**, **Yogurt AI on this Mac** (or computer) shows whether Yogurt's own notes model is on your computer. **Remove** frees the space it takes, and **Download** brings it back. While it is removed, tasks still set to it wait, and their menu items say to pick another AI.
+
+A computer with too little memory for any notes model can still be set up: choose **Continue without Yogurt AI**, then pick another AI for your summaries in **Settings → AI models**.
 
 ## Your data
 
@@ -81,6 +98,10 @@ On a Mac, the **Take notes?** card that shows when a call starts has a screen bu
 Finish any recording, then open **Settings → Backup** to export your meetings and audio to one ZIP file. Meetings in the Trash are not included.
 
 Import a backup from the same section. It adds meetings that are missing and leaves existing meetings unchanged. Backups work across Mac, Windows and Linux.
+
+## Transcription model
+
+**Settings → Transcription** picks the Whisper model that transcribes your meetings, always on your computer. **Auto** uses the one setup picked for it. Another model downloads while the current one keeps working, and takes over once nothing is being recorded or transcribed; the old one is then removed.
 
 ## Connect an AI app
 
