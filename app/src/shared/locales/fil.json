@@ -810,5 +810,12 @@
   "Copy setup": "Kopyahin ang setup",
   "App name": "Pangalan ng app",
   "Add an app": "Magdagdag ng app",
-  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "I-paste ang setup na ito sa {name}. Nasa loob nito ang key ng app, kaya huwag itong ibahagi."
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "I-paste ang setup na ito sa {name}. Nasa loob nito ang key ng app, kaya huwag itong ibahagi.",
+  "Edit or regenerate summary": "I-edit o gawin ulit ang buod",
+  "Edit summary": "I-edit ang buod",
+  "Edit using the transcript too": "I-edit gamit din ang transcript",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Mas mabagal, at nakadepende sa modelo ng mga tala: baka hindi magkasya ang mahabang meeting, kaya babasahin ito nang pira-piraso.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "Papalitan ng “Buuin muli” ang mga edit mo sa buod. Pananatilihin ng “I-edit” ang mga ito.",
+  "Summary edited": "Na-edit ang buod",
+  "The summary changed since, so it wasn't undone.": "Nagbago na ang buod mula noon, kaya hindi ito na-undo."
 }

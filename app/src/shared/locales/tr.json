@@ -798,5 +798,12 @@
   "Copy setup": "Kurulumu kopyala",
   "App name": "Uygulama adı",
   "Add an app": "Uygulama ekle",
-  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Bu kurulumu {name} uygulamasına yapıştırın. Uygulamanın anahtarını içerir, bu yüzden kimseyle paylaşmayın."
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Bu kurulumu {name} uygulamasına yapıştırın. Uygulamanın anahtarını içerir, bu yüzden kimseyle paylaşmayın.",
+  "Edit or regenerate summary": "Özeti düzenle veya yeniden oluştur",
+  "Edit summary": "Özeti düzenle",
+  "Edit using the transcript too": "Transkripti de kullanarak düzenle",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Daha yavaştır ve not modeline bağlıdır: uzun bir toplantı modele sığmayabilir, bu durumda parça parça okunur.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "“Yeniden oluştur” özette yaptığınız düzenlemeleri değiştirir. “Düzenle” onları korur.",
+  "Summary edited": "Özet düzenlendi",
+  "The summary changed since, so it wasn't undone.": "Özet o zamandan beri değişti, bu yüzden düzenleme geri alınmadı."
 }

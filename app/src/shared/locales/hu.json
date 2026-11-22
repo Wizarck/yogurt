@@ -798,5 +798,12 @@
   "Copy setup": "Beállítás másolása",
   "App name": "App neve",
   "Add an app": "App hozzáadása",
-  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Illeszd be ezt a beállítást ide: {name}. Az app kulcsát tartalmazza, ezért ne oszd meg."
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Illeszd be ezt a beállítást ide: {name}. Az app kulcsát tartalmazza, ezért ne oszd meg.",
+  "Edit or regenerate summary": "Összefoglaló szerkesztése vagy újrakészítése",
+  "Edit summary": "Összefoglaló szerkesztése",
+  "Edit using the transcript too": "Szerkesztés az átirat alapján is",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Lassabb, és a jegyzetmodelltől függ: egy hosszú megbeszélés talán nem fér bele, ilyenkor részenként dolgozza fel.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "Az „Újragenerálás” lecseréli az összefoglalón végzett módosításaidat. A „Szerkesztés” megtartja őket.",
+  "Summary edited": "Összefoglaló szerkesztve",
+  "The summary changed since, so it wasn't undone.": "Az összefoglaló azóta megváltozott, ezért a szerkesztést nem lehetett visszavonni."
 }

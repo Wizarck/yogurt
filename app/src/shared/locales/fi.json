@@ -816,5 +816,12 @@
   "Copy setup": "Kopioi asetukset",
   "App name": "Apin nimi",
   "Add an app": "Lisää appi",
-  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Liitä nämä asetukset appiin {name}. Ne sisältävät apin avaimen, joten pidä ne omana tietonasi."
+  "Paste this setup into {name}. It holds the app’s key, so keep it private.": "Liitä nämä asetukset appiin {name}. Ne sisältävät apin avaimen, joten pidä ne omana tietonasi.",
+  "Edit or regenerate summary": "Muokkaa tai luo yhteenveto uudelleen",
+  "Edit summary": "Muokkaa yhteenvetoa",
+  "Edit using the transcript too": "Käytä muokatessa myös litterointia",
+  "Slower, and depends on the notes model: a long meeting may not fit it and is then read in parts.": "Hitaampi ja riippuu muistiinpanomallista: pitkä kokous ei ehkä mahdu siihen, jolloin se luetaan osissa.",
+  "Regenerate replaces your edits to the summary. Edit keeps them.": "”Luo uudelleen” korvaa yhteenvetoon tekemäsi muutokset. ”Muokkaa” säilyttää ne.",
+  "Summary edited": "Yhteenveto muokattu",
+  "The summary changed since, so it wasn't undone.": "Yhteenvetoa on muutettu sen jälkeen, joten muokkausta ei kumottu."
 }
